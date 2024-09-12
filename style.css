@@ -10,21 +10,11 @@ body, html {
     background-size: cover;
 }
 
-.wrapper {
-    display: flex;
-    align-items: flex-start;
-}
-
-iframe {
-    margin: 20px;
-}
-
 .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 20px; /* Espacement entre iframe et le contenu */
 }
 
 h1 {
