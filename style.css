@@ -25,17 +25,21 @@ body {
     align-items: center; /* Centrer les éléments horizontalement */
     justify-content: center; /* Centrer verticalement */
     height: 100%; /* Utiliser toute la hauteur */
+    position: relative; /* Position relative pour les éléments enfants */
 }
 
 /* Styles pour le texte */
 h1 {
     font-size: 4em; /* Taille du texte */
     margin: 0; /* Supprimer les marges par défaut */
+    position: absolute; /* Position absolue pour superposer sur l'image */
+    z-index: 1; /* Assurer que le texte est au-dessus de l'image */
 }
 
-/* Styles pour l'image positionnée sous le texte */
-.bottom-image {
-    margin-top: 20px; /* Espace entre le texte et l'image */
-    width: 200px; /* Ajuste la taille de l'image à 200px de large */
+/* Styles pour l'image en arrière-plan */
+.background-image {
+    width: 200px; /* Ajuste la taille de l'image */
     height: auto; /* Conserver les proportions de l'image */
+    z-index: 0; /* Assurer que l'image est derrière le texte */
+    position: absolute; /* Position absolue pour superposer sous le texte */
 }
