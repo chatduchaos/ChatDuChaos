@@ -1,0 +1,23 @@
+/* Réinitialiser les marges par défaut */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Appliquer le fond noir et le dégradé bleu */
+body {
+    background: linear-gradient(to bottom, #000000 50%, #0000ff 100%);
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Styliser le texte */
+h1 {
+    font-size: 4em;
+    text-align: center;
+}
