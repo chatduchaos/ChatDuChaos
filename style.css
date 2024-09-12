@@ -34,6 +34,8 @@ body {
     display: flex;
     flex-direction: column; /* Disposer les éléments en colonne */
     align-items: center; /* Centrer les éléments horizontalement */
+    justify-content: center; /* Centrer verticalement */
+    height: calc(100vh - 50px); /* Hauteur disponible après la barre */
 }
 
 /* Styles pour le texte */
