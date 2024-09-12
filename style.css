@@ -2,6 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,7 +20,7 @@ body, html {
 
 h1 {
     font-size: 4em;
-    color: #0000ff; /* Bleu */
+    color: #0000ff;
     margin: 20px 0;
 }
 
