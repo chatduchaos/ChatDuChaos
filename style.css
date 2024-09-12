@@ -2,6 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
+    overflow: hidden; /* Empêcher le défilement */
 }
 
 body {
@@ -13,7 +14,6 @@ body {
     align-items: center;
     height: 100vh;
     text-align: center; /* Centrer le texte */
-    overflow: hidden; /* Empêcher le défilement */
     position: relative; /* Nécessaire pour le positionnement absolu de l'image */
 }
 
@@ -22,10 +22,10 @@ h1 {
     margin: 0;
 }
 
-.top-right-image {
+.top-left-image {
     position: absolute; /* Positionner l'image par rapport au body */
-    top: 10px; /* Espacement du haut */
-    right: 10px; /* Espacement de la droite */
+    top: 0; /* Coller l'image en haut */
+    left: 0; /* Coller l'image à gauche */
     width: 100px; /* Ajuste la taille de l'image si nécessaire */
     height: auto; /* Conserver les proportions de l'image */
 }
