@@ -5,10 +5,10 @@ body, html {
     height: 100%;
 }
 
-/* Appliquer le fond noir et le dégradé bleu du haut vers le bas */
+/* Appliquer le fond noir */
 body {
-    background: linear-gradient(to bottom, #000000 50%, #0000ff 100%);
-    color: white;
+    background-color: #000000; /* Fond noir */
+    color: #ff0000; /* Texte rouge */
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -29,7 +29,7 @@ h1 {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.8); /* Fond semi-transparent */
+    background: rgba(0, 0, 0, 0.8); /* Fond semi-transparent noir */
     padding: 10px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     z-index: 1000; /* Assurer que le menu est au-dessus du contenu */
@@ -48,7 +48,7 @@ h1 {
 }
 
 .navbar a {
-    color: white;
+    color: #ff0000; /* Texte des liens en rouge */
     text-decoration: none;
     font-size: 1.2em;
 }
