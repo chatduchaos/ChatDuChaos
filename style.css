@@ -1,35 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-body, html {
+body {
+    background-image: url('https://github.com/chatduchaos/Site-ChatDuChaos/blob/main/wallpaperflare.com_wallpaper.jpg?raw=true');
+    background-size: cover;
     margin: 0;
     padding: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: url('https://github.com/chatduchaos/Site-ChatDuChaos/raw/main/wallpaperflare.com_wallpaper.jpg') no-repeat center center fixed;
-    background-size: cover;
-    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
 }
-
-.link {
+.centered-text {
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    text-decoration: none;
-    color: #0000ff;
-    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+    color: #00f;
+    text-align: center;
 }
-
-h1 {
-    font-size: 4em;
-    margin: 20px 0;
-}
-
-.foreground-image {
-    width: 400px;
-    height: auto;
+.image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 50%;
+    max-height: 50%;
 }
