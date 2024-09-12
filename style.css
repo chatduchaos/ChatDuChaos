@@ -14,9 +14,18 @@ body {
     height: 100vh;
     text-align: center; /* Centrer le texte */
     overflow: hidden; /* Empêcher le défilement */
+    position: relative; /* Nécessaire pour le positionnement absolu de l'image */
 }
 
 h1 {
     font-size: 4em; /* Taille du texte */
     margin: 0;
+}
+
+.top-right-image {
+    position: absolute; /* Positionner l'image par rapport au body */
+    top: 10px; /* Espacement du haut */
+    right: 10px; /* Espacement de la droite */
+    width: 100px; /* Ajuste la taille de l'image si nécessaire */
+    height: auto; /* Conserver les proportions de l'image */
 }
