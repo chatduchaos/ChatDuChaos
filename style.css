@@ -26,6 +26,7 @@ body {
     position: absolute; /* Position absolue pour rester en haut de la page */
     top: 0;
     left: 0;
+    z-index: 1; /* Assurer que la barre est au-dessus des autres éléments */
 }
 
 /* Conteneur principal pour centrer le texte et l'image */
