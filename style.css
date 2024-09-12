@@ -11,20 +11,21 @@ body, html {
     background-size: cover;
 }
 
-.content {
+.container {
+    position: relative;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-h1 {
-    font-size: 4em;
-    color: #0000ff;
-    margin: 20px 0;
 }
 
 .foreground-image {
     width: 400px;
     height: auto;
+}
+
+h1 {
+    position: absolute;
+    font-size: 4em;
+    color: #0000ff;
+    z-index: 2;
 }
