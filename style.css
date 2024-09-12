@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body, html {
     margin: 0;
     padding: 0;
@@ -9,7 +11,7 @@ body, html {
     text-align: center;
     background: url('https://github.com/chatduchaos/Site-ChatDuChaos/raw/main/wallpaperflare.com_wallpaper.jpg') no-repeat center center fixed;
     background-size: cover;
-    overflow: hidden; /* Pour éviter le défilement si l'image est plus grande */
+    overflow: hidden;
 }
 
 .link {
@@ -18,7 +20,8 @@ body, html {
     left: 50%;
     transform: translateX(-50%);
     text-decoration: none;
-    color: #0000ff; /* Bleu */
+    color: #0000ff;
+    font-family: 'Press Start 2P', cursive;
 }
 
 h1 {
