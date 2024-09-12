@@ -1,3 +1,4 @@
+/* Réinitialiser les marges et le padding pour le body et html */
 body, html {
     margin: 0;
     padding: 0;
@@ -5,28 +6,43 @@ body, html {
     overflow: hidden; /* Empêcher le défilement */
 }
 
+/* Styles pour le corps de la page */
 body {
-    background-color: #000000; /* Fond noir */
-    color: #ff0000; /* Texte rouge */
-    font-family: Arial, sans-serif;
+    background-color: #000000; /* Fond noir pour la page */
+    color: #ff0000; /* Couleur du texte en rouge */
+    font-family: Arial, sans-serif; /* Police de caractères */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    flex-direction: column; /* Disposer les éléments en colonne */
+    align-items: center; /* Centrer les éléments horizontalement */
+    height: 100vh; /* Hauteur de la vue du port */
     text-align: center; /* Centrer le texte */
 }
 
+/* Styles pour la barre en haut de la page */
+.top-bar {
+    width: 100%; /* La barre occupe toute la largeur de la page */
+    height: 50px; /* Hauteur de la barre */
+    background: linear-gradient(to bottom, #00ff00, #000000); /* Dégradé de vert à noir */
+    position: absolute; /* Position absolue pour rester en haut de la page */
+    top: 0;
+    left: 0;
+}
+
+/* Conteneur principal pour centrer le texte et l'image */
 .container {
+    margin-top: 50px; /* Espacement pour la barre en haut */
     display: flex;
-    flex-direction: column; /* Aligner les éléments en colonne */
+    flex-direction: column; /* Disposer les éléments en colonne */
     align-items: center; /* Centrer les éléments horizontalement */
 }
 
+/* Styles pour le texte */
 h1 {
     font-size: 4em; /* Taille du texte */
-    margin: 0;
+    margin: 0; /* Supprimer les marges par défaut */
 }
 
+/* Styles pour l'image positionnée sous le texte */
 .bottom-image {
     margin-top: 20px; /* Espace entre le texte et l'image */
     width: 100px; /* Ajuste la taille de l'image si nécessaire */
