@@ -9,23 +9,24 @@ body, html {
     text-align: center;
     background: url('https://github.com/chatduchaos/Site-ChatDuChaos/raw/main/wallpaperflare.com_wallpaper.jpg') no-repeat center center fixed;
     background-size: cover;
+    overflow: hidden; /* Pour éviter le défilement si l'image est plus grande */
 }
 
-.container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.link {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    color: #0000ff; /* Bleu */
+}
+
+h1 {
+    font-size: 4em;
+    margin: 20px 0;
 }
 
 .foreground-image {
     width: 400px;
     height: auto;
-}
-
-h1 {
-    position: absolute;
-    font-size: 4em;
-    color: #0000ff;
-    z-index: 2;
 }
