@@ -14,7 +14,12 @@ body {
     align-items: center;
     height: 100vh;
     text-align: center; /* Centrer le texte */
-    position: relative; /* Nécessaire pour le positionnement absolu de l'image */
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Aligner les éléments en colonne */
+    align-items: center; /* Centrer les éléments horizontalement */
 }
 
 h1 {
@@ -22,10 +27,8 @@ h1 {
     margin: 0;
 }
 
-.top-left-image {
-    position: absolute; /* Positionner l'image par rapport au body */
-    top: 0; /* Coller l'image en haut */
-    left: 0; /* Coller l'image à gauche */
+.bottom-image {
+    margin-top: 20px; /* Espace entre le texte et l'image */
     width: 100px; /* Ajuste la taille de l'image si nécessaire */
     height: auto; /* Conserver les proportions de l'image */
 }
