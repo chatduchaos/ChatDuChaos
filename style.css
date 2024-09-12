@@ -16,6 +16,7 @@ body {
     align-items: center; /* Centrer les éléments horizontalement */
     height: 100vh; /* Hauteur de la vue du port */
     text-align: center; /* Centrer le texte */
+    padding-bottom: 50px; /* Ajouter un padding en bas pour la barre inférieure */
 }
 
 /* Styles pour la barre en haut de la page */
@@ -26,17 +27,39 @@ body {
     position: absolute; /* Position absolue pour rester en haut de la page */
     top: 0;
     left: 0;
+    display: flex;
+    align-items: center; /* Centrer le lien verticalement */
+    justify-content: center; /* Centrer le lien horizontalement */
+    z-index: 1; /* Assurer que la barre est au-dessus des autres éléments */
+}
+
+/* Styles pour le lien Twitch dans la barre en haut */
+.twitch-link {
+    color: #000000; /* Couleur du texte du lien en noir */
+    text-decoration: none; /* Supprimer la sous-ligne du lien */
+    font-size: 1.5em; /* Taille du texte du lien */
+}
+
+/* Styles pour la barre en bas de la page */
+.bottom-bar {
+    width: 100%; /* La barre occupe toute la largeur de la page */
+    height: 50px; /* Hauteur de la barre */
+    background: linear-gradient(to top, #00ff00, #000000); /* Dégradé de vert à noir vers l'intérieur */
+    position: absolute; /* Position absolue pour rester en bas de la page */
+    bottom: 0;
+    left: 0;
     z-index: 1; /* Assurer que la barre est au-dessus des autres éléments */
 }
 
 /* Conteneur principal pour centrer le texte et l'image */
 .container {
     margin-top: 50px; /* Espacement pour la barre en haut */
+    margin-bottom: 50px; /* Espacement pour la barre en bas */
     display: flex;
     flex-direction: column; /* Disposer les éléments en colonne */
     align-items: center; /* Centrer les éléments horizontalement */
     justify-content: center; /* Centrer verticalement */
-    height: calc(100vh - 50px); /* Hauteur disponible après la barre */
+    height: calc(100vh - 100px); /* Hauteur disponible après les barres */
 }
 
 /* Styles pour le texte */
@@ -48,6 +71,6 @@ h1 {
 /* Styles pour l'image positionnée sous le texte */
 .bottom-image {
     margin-top: 20px; /* Espace entre le texte et l'image */
-    width: 100px; /* Ajuste la taille de l'image si nécessaire */
+    width: 200px; /* Ajuste la taille de l'image à 200px de large */
     height: auto; /* Conserver les proportions de l'image */
 }
