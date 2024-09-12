@@ -1,23 +1,41 @@
-/* Réinitialiser les marges par défaut */
-body, html {
+/* Styles pour le menu de navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Fond semi-transparent */
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.navbar ul {
+    list-style: none;
     margin: 0;
     padding: 0;
-    height: 100%;
-}
-
-/* Appliquer le fond noir et le dégradé bleu du haut vers le bas */
-body {
-    background: linear-gradient(to bottom, #000000 50%, #0000ff 100%);
-    color: white;
-    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 
-/* Styliser le texte */
-h1 {
-    font-size: 4em;
-    text-align: center;
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Espacement pour le contenu en dessous du menu */
+.container {
+    margin-top: 60px; /* Ajuste selon la hauteur de ton menu */
+}
+
+/* Styles pour les sections */
+div[id] {
+    margin: 50px 0;
 }
