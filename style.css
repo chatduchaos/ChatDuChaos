@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body, html {
     margin: 0;
@@ -21,7 +21,7 @@ body, html {
     transform: translateX(-50%);
     text-decoration: none;
     color: #0000ff;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Roboto', sans-serif;
 }
 
 h1 {
