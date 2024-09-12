@@ -4,16 +4,19 @@ body {
     padding: 0;
     font-family: 'Roboto', sans-serif;
     color: #fff;
+    position: relative; /* Pour permettre le positionnement absolu des éléments enfants */
+    min-height: 100vh; /* Assure que le fond couvre toute la hauteur de la page */
 }
 
 .centered-text {
     position: absolute;
-    top: 0;
+    top: 10px; /* Ajuste cette valeur si nécessaire pour le positionner en haut */
     left: 50%;
     transform: translateX(-50%);
     font-size: 3em;
     color: #00f;
     text-align: center;
+    z-index: 10; /* Assure que le texte est devant les autres éléments */
 }
 
 .image {
@@ -23,6 +26,7 @@ body {
     transform: translate(-50%, -50%);
     max-width: 50%;
     max-height: 50%;
+    z-index: 5; /* Assure que l'image est derrière le texte mais devant le fond */
 }
 
 @media (max-width: 768px) {
