@@ -9,11 +9,48 @@ body {
     color: #ff0000; /* Texte rouge */
     font-family: Arial, sans-serif;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     text-align: center; /* Centrer le texte */
     overflow: hidden; /* Empêcher le défilement */
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(to bottom, #333333, #000000); /* Dégradé gris très sombre vers noir */
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Ombre portée */
+    z-index: 1000; /* Assurer que le menu est au-dessus du contenu */
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: #ff0000; /* Texte des liens en rouge */
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    margin-top: 60px; /* Ajuste selon la hauteur de ton menu */
 }
 
 h1 {
