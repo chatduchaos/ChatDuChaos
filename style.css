@@ -5,54 +5,18 @@ body, html {
 }
 
 body {
-    background-color: #000000;
-    color: #ff0000;
+    background-color: #000000; /* Fond noir */
+    color: #ff0000; /* Texte rouge */
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    text-align: center;
-    overflow: hidden;
+    text-align: center; /* Centrer le texte */
+    overflow: hidden; /* Empêcher le défilement */
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 4em; /* Taille du texte */
     margin: 0;
-}
-
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    padding: 10px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    z-index: 1000;
-}
-
-.navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.navbar li {
-    margin: 0 15px;
-}
-
-.navbar a {
-    color: #ff0000;
-    text-decoration: none;
-    font-size: 1.2em;
-}
-
-.navbar a:hover {
-    text-decoration: underline;
-}
-
-.container {
-    margin-top: 60px;
 }
