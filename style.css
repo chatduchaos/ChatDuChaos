@@ -1,8 +1,5 @@
 body {
-    background-image: url('https://github.com/chatduchaos/Site-ChatDuChaos/blob/main/wallpaperflare.com_wallpaper.jpg?raw=true');
-    background-size: cover; /* Assure que l'image couvre tout l'écran */
-    background-position: center; /* Centre l'image dans la page */
-    background-repeat: no-repeat; /* Évite la répétition de l'image */
+    background-color: #000;
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
@@ -28,20 +25,13 @@ body {
     max-height: 50%;
 }
 
-/* Pour les petits écrans comme les téléphones */
 @media (max-width: 768px) {
-    body {
-        background-size: cover; /* Maintient la couverture entière */
-        background-position: center; /* Centre l'image */
-        background-attachment: fixed; /* Fixe l'image en arrière-plan */
-    }
-
     .centered-text {
-        font-size: 2em; /* Réduit la taille du texte sur les petits écrans */
+        font-size: 2em;
     }
 
     .image {
-        max-width: 80%; /* Ajuste la taille de l'image pour les petits écrans */
+        max-width: 80%;
         max-height: 80%;
     }
 }
