@@ -1,46 +1,31 @@
-/* Réinitialiser les marges et le padding pour le body et html */
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow: hidden; /* Empêcher le défilement */
-}
-
-/* Styles pour le corps de la page */
-body {
-    background-color: #000000; /* Fond noir pour la page */
-    color: #ff0000; /* Couleur du texte en rouge */
-    font-family: Arial, sans-serif; /* Police de caractères */
     display: flex;
-    justify-content: center; /* Centrer horizontalement */
-    align-items: center; /* Centrer verticalement */
-    height: 100vh; /* Hauteur de la vue du port */
-    text-align: center; /* Centrer le texte */
-    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white; /* Optionnel : Fond blanc */
 }
 
-/* Conteneur principal */
 .container {
+    position: relative;
     display: flex;
-    flex-direction: column; /* Disposer les éléments en colonne */
-    justify-content: center; /* Centrer verticalement */
-    align-items: center; /* Centrer horizontalement */
-    position: relative; /* Permet de superposer le texte et l'image */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-/* Styles pour le texte */
 h1 {
-    font-size: 4em; /* Taille du texte */
-    margin: 0; /* Supprimer les marges par défaut */
-    z-index: 2; /* Assurer que le texte est au-dessus de l'image */
-    position: relative;
+    font-size: 4em;
+    color: #ff0000; /* Texte en rouge */
+    position: absolute;
+    z-index: 2;
 }
 
-/* Styles pour l'image en avant-plan */
 .foreground-image {
-    width: 400px; /* Ajuste la taille de l'image */
-    height: auto; /* Conserver les proportions de l'image */
-    z-index: 1; /* Assurer que l'image est derrière le texte */
-    margin-top: 20px; /* Espace entre le texte et l'image */
-    position: relative;
+    width: 400px;
+    height: auto;
+    z-index: 1;
 }
