@@ -5,7 +5,7 @@ body, html {
     height: 100%;
 }
 
-/* Appliquer le fond noir et le dégradé bleu */
+/* Appliquer le fond noir et le dégradé bleu du haut vers le bas */
 body {
     background: linear-gradient(to bottom, #000000 50%, #0000ff 100%);
     color: white;
