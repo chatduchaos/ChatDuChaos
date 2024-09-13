@@ -39,3 +39,24 @@ nav ul li a {
 nav ul li a:hover {
     color: #00aaff;
 }
+
+h1 {
+    text-align: center;
+    color: #00aaff;
+    margin-top: 50px;
+}
+
+.soon-link {
+    color: #00aaff;
+    text-decoration: none;
+}
+
+.soon-link:hover {
+    color: #007acc;
+}
+
+.profile-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 300px;
+}
