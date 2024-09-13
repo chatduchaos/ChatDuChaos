@@ -1,80 +1,96 @@
-* {
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #000;
+    font-family: Arial, sans-serif;
 }
 
-html, body {
+#container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#background-image {
+    background-image: url('wallpaperflare.com_wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
     height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: black;
-    color: white;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+#content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    padding: 15px 30px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-nav ul li a {
-    color: white;
+#soonTM {
+    display: block;
+    font-size: 48px;
+    color: #00f;
     text-decoration: none;
-    font-weight: bold;
-    padding: 10px;
-    border: 2px solid white;
+    margin-bottom: 20px;
 }
 
-nav ul li a:hover {
-    color: #00aaff;
+#profile-image {
+    width: 200px; /* Ajuste la taille selon besoin */
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
-.social-icons {
+#game {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px; /* Ajuste la hauteur selon besoin */
+    background-color: #e0e0e0;
+    font-family: Arial, sans-serif;
     display: flex;
-    gap: 15px;
-}
-
-.social-icons img {
-    width: 30px;
-    height: 30px;
-}
-
-main {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
 }
 
-h1 {
-    color: #00aaff;
+#dino {
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    left: 50px;
 }
 
-.soon-link {
-    color: #00aaff;
-    text-decoration: none;
+#cactus {
+    width: 20px;
+    height: 40px;
+    background-color: #8B4513;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation: move 1s infinite linear;
 }
 
-.soon-link:hover {
-    color: #007acc;
+#score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    color: #000;
 }
 
-.profile-image {
-    max-width: 300px;
+@keyframes move {
+    from {
+        right: -20px;
+    }
+    to {
+        right: 100%;
+    }
 }
