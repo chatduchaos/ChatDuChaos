@@ -1,41 +1,41 @@
-body {
-    background-color: #000;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: 'Roboto', sans-serif;
-    color: #fff;
-    position: relative; /* Pour permettre le positionnement absolu des éléments enfants */
-    min-height: 100vh; /* Assure que le fond couvre toute la hauteur de la page */
+    background-color: black;
+    color: white;
 }
 
-.centered-text {
-    position: absolute;
-    top: 10px; /* Ajuste cette valeur si nécessaire pour le positionner en haut */
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 3em;
-    color: #00f;
-    text-align: center;
-    z-index: 10; /* Assure que le texte est devant les autres éléments */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px 30px;
 }
 
-.image {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 50%;
-    max-height: 50%;
-    z-index: 5; /* Assure que l'image est derrière le texte mais devant le fond */
+.logo {
+    border: 2px solid white;
+    padding: 10px;
+    color: white;
 }
 
-@media (max-width: 768px) {
-    .centered-text {
-        font-size: 2em;
-    }
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
 
-    .image {
-        max-width: 80%;
-        max-height: 80%;
-    }
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #00aaff;
 }
