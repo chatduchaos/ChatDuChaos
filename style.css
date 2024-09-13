@@ -19,10 +19,29 @@ body {
 
 header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
+    background-color: #333;
     padding: 15px 30px;
     position: relative;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    border: 2px solid white;
+}
+
+nav ul li a:hover {
+    color: #00aaff;
 }
 
 .social-icons {
@@ -46,10 +65,8 @@ main {
 
 h1 {
     color: #00aaff;
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: 0;
+    font-size: 3rem;
 }
 
 .soon-link {
