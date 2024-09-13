@@ -1,49 +1,80 @@
-body {
+* {
     margin: 0;
     padding: 0;
-    background-color: #000;
-    font-family: Arial, sans-serif;
+    box-sizing: border-box;
 }
 
-#container {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-}
-
-#background-image {
-    background-image: url('wallpaperflare.com_wallpaper.jpg');
-    background-size: cover;
-    background-position: center;
-    width: 100%;
+html, body {
     height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
 }
 
-#content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-#soonTM {
-    display: block;
-    font-size: 48px;
-    color: #00f;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
     text-decoration: none;
-    margin-bottom: 20px;
+    font-weight: bold;
+    padding: 10px;
+    border: 2px solid white;
 }
 
-#profile-image {
-    width: 200px; /* Ajuste la taille selon besoin */
-    height: auto;
-    display: block;
-    margin: 0 auto;
+nav ul li a:hover {
+    color: #00aaff;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    color: #00aaff;
+}
+
+.soon-link {
+    color: #00aaff;
+    text-decoration: none;
+}
+
+.soon-link:hover {
+    color: #007acc;
+}
+
+.profile-image {
+    max-width: 300px;
 }
