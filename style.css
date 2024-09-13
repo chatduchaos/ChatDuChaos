@@ -64,6 +64,7 @@ main {
 
 h1 {
     color: #00aaff;
+    margin-bottom: 20px;
 }
 
 .soon-link {
@@ -77,4 +78,5 @@ h1 {
 
 .profile-image {
     max-width: 300px;
+    max-height: 300px;
 }
