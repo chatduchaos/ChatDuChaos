@@ -29,6 +29,7 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
+    align-items: center;
 }
 
 nav ul li a {
@@ -41,6 +42,11 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #00aaff;
+}
+
+.nav-logo {
+    width: 50px; /* Ajustez la taille selon vos besoins */
+    height: auto; /* Conserve les proportions */
 }
 
 .social-icons {
@@ -64,7 +70,6 @@ main {
 
 h1 {
     color: #00aaff;
-    margin-bottom: 20px;
 }
 
 .soon-link {
@@ -78,5 +83,4 @@ h1 {
 
 .profile-image {
     max-width: 300px;
-    max-height: 300px;
 }
