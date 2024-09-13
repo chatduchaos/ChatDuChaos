@@ -10,8 +10,8 @@ html, body {
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: black;
-    color: white;
+    background-color: #f0f0f0; /* Gray background */
+    color: black; /* Text color adjusted for readability */
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -23,7 +23,6 @@ header {
     align-items: center;
     background-color: #333;
     padding: 15px 30px;
-    position: relative;
 }
 
 nav ul {
@@ -49,14 +48,14 @@ nav ul li a:hover {
     gap: 15px;
 }
 
+.social-icons a {
+    display: flex;
+    align-items: center;
+}
+
 .social-icons img {
     width: 30px;
     height: 30px;
-}
-
-.logo img {
-    width: 40px;
-    height: 40px;
 }
 
 main {
