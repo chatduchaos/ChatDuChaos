@@ -24,9 +24,23 @@ header {
     color: #fff;
     padding: 20px;
     width: 100%;
+}
+
+.nav-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+}
+
+.nav-left, .nav-center, .social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left {
+    flex: 1;
+    justify-content: flex-start;
 }
 
 .logo {
@@ -34,7 +48,6 @@ header {
     text-decoration: none;
     font-size: 24px;
     font-weight: bold;
-    text-align: center;
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
@@ -43,10 +56,9 @@ header {
     color: #00aaff; /* Change the text color on hover */
 }
 
-.nav-container {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+.nav-center {
+    flex: 2;
+    justify-content: center;
 }
 
 .nav-link {
@@ -54,6 +66,7 @@ header {
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
+    margin: 0 10px;
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
@@ -63,7 +76,8 @@ header {
 }
 
 .social-icons {
-    display: flex;
+    flex: 1;
+    justify-content: flex-end;
     gap: 15px;
 }
 
