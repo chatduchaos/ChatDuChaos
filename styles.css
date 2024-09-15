@@ -24,6 +24,8 @@ header {
     color: #fff;
     padding: 20px;
     width: 100%;
+    z-index: 10; /* Ensure header is on top */
+    position: relative; /* Needed for z-index to work */
 }
 
 .nav-container {
@@ -54,7 +56,7 @@ header {
 .nav-center {
     flex: 2;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .nav-link {
@@ -73,6 +75,7 @@ header {
 
 .social-icons {
     flex: 1;
+    display: flex;
     justify-content: flex-end;
     gap: 15px;
 }
@@ -94,47 +97,27 @@ header {
 main {
     flex-grow: 1;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
+    position: relative; /* Needed to ensure main content is behind the header */
 }
 
-.giveaway-container {
-    width: 100%;
+.twitch-player {
+    width: 80%;
     height: 0;
-    padding-bottom: 56.25%; /* Aspect ratio for 16:9 */
+    padding-bottom: 45%; /* Aspect ratio for 16:9 */
     position: relative;
     background-color: #000;
 }
 
-.giveaway-container iframe {
+.twitch-player iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     border: none;
-}
-
-.home-button {
-    margin-top: 20px;
-}
-
-.home-button a {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 20px;
-    color: #fff;
-    background-color: #333;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.home-button a:hover {
-    background-color: #00aaff;
-    color: #fff;
 }
