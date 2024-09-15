@@ -26,7 +26,7 @@ header {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center; /* Center all items in the header */
+    justify-content: space-between;
 }
 
 .logo {
@@ -34,18 +34,22 @@ header {
     text-decoration: none;
     font-size: 24px;
     font-weight: bold;
-    flex-grow: 1;
-    text-align: center;
-    margin: 0 auto; /* Center the logo */
+    text-align: left;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .logo:hover {
-    text-decoration: underline;
+    transform: scale(1.1); /* Increase the text size on hover */
+    color: #00aaff; /* Change the text color on hover */
 }
 
 .social-icons {
     display: flex;
     gap: 15px;
+}
+
+.social-icons a {
+    display: block;
 }
 
 .social-icons img {
@@ -63,12 +67,24 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-iframe {
-    width: 720px;
-    height: 480px;
-    max-width: 100%;
+.twitch-player {
+    width: 80%;
+    height: 0;
+    padding-bottom: 45%; /* Aspect ratio for 16:9 */
+    position: relative;
+    background-color: #000;
+}
+
+.twitch-player iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     border: none;
 }
