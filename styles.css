@@ -13,19 +13,24 @@ html, body {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: #333;
     padding: 15px 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-nav ul {
-    list-style: none;
+nav {
     display: flex;
     align-items: center;
     width: 100%;
     justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
 }
 
 .center-link {
@@ -33,12 +38,6 @@ nav ul {
     text-decoration: none;
     font-weight: bold;
     font-size: 24px;
-    margin: 0 auto;
-}
-
-.social-icons {
-    display: flex;
-    gap: 15px;
 }
 
 .social-link {
