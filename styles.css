@@ -6,10 +6,10 @@
 
 html, body {
     height: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
     background-color: #f5f5f5;
     color: #333;
     display: flex;
@@ -25,8 +25,8 @@ header {
     padding: 20px;
     width: 100%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
@@ -34,8 +34,6 @@ header {
     text-decoration: none;
     font-size: 24px;
     font-weight: bold;
-    flex-grow: 1;
-    text-align: center;
 }
 
 .logo:hover {
@@ -47,10 +45,6 @@ header {
     gap: 15px;
 }
 
-.social-icons a {
-    display: block;
-}
-
 .social-icons img {
     width: 40px;
     height: 40px;
@@ -58,7 +52,7 @@ header {
 }
 
 .social-icons img:hover {
-    transform: scale(1.5);
+    transform: scale(1.1);
 }
 
 main {
@@ -66,4 +60,12 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+}
+
+iframe {
+    width: 720px;
+    height: 480px;
+    max-width: 100%;
+    border: none;
 }
