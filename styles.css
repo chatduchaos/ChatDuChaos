@@ -39,7 +39,7 @@ header {
 }
 
 .logo:hover {
-    transform: scale(1.6); /* Increase the text size on hover */
+    transform: scale(1.2); /* Increase the text size on hover */
     color: #00aaff; /* Change the text color on hover */
 }
 
