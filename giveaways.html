@@ -3,40 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giveaway - ChatDuChaos</title>
+    <title>Giveaways - ChatDuChaos</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        header {
+            width: 100%;
+            z-index: 10;
+            position: relative;
+        }
+        .gleam-widget {
+            width: 80%;
+            height: 80vh;
+            margin: 0 auto;
+            position: relative;
+            background-color: #fff;
+            margin-top: 20px; /* Adjust margin to ensure it's below the navigation */
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav class="nav-container">
-            <div class="nav-left">
-                <a href="giveaways.html" class="nav-link">Giveaways</a>
-                <a href="commandes.html" class="nav-link">Commandes</a>
-                <a href="planning.html" class="nav-link">Planning</a>
-                <a href="setup.html" class="nav-link">Setup</a>
-            </div>
-            <div class="nav-center">
-                <a href="acceuil.html" class="logo">Twitch</a>
-            </div>
-            <div class="social-icons">
-                <a href="https://x.com/chatduchaos" target="_blank">
-                    <img src="https://raw.githubusercontent.com/chatduchaos/ChatDuChaos/main/images/Logo%20X.png" alt="Logo X">
-                </a>
-                <a href="https://www.tiktok.com/@chatduchaos" target="_blank">
-                    <img src="https://raw.githubusercontent.com/chatduchaos/ChatDuChaos/main/images/Logo%20TikTok.png" alt="Logo TikTok">
-                </a>
-                <a href="https://www.youtube.com/@ChatDuChaos" target="_blank">
-                    <img src="https://raw.githubusercontent.com/chatduchaos/ChatDuChaos/main/images/Logo%20YouTube.png" alt="Logo YouTube">
-                </a>
-                <a href="https://www.instagram.com/chatduchaos" target="_blank">
-                    <img src="https://raw.githubusercontent.com/chatduchaos/ChatDuChaos/main/images/Logo%20Instagram.png" alt="Logo Instagram">
-                </a>
-            </div>
+        <a href="https://www.twitch.tv/chatduchaos" class="logo">TWITCH</a>
+        <nav>
+            <a href="giveaways.html">Giveaways</a>
+            <a href="commandes.html">Commandes</a>
+            <a href="planning.html">Planning</a>
+            <a href="setup.html">Setup</a>
         </nav>
+        <div class="social-icons">
+            <a href="https://x.com/chatduchaos" target="_blank">
+                <img src="https://raw.githubusercontent.com/chatduchaos/ChatDuChaos/main/images/Logo%20X.png" alt="Logo X">
+            </a>
+            <a href="https://www.tiktok.com/@chatduchaos" target="_blank">
+                <img src="https://raw.githubusercontent.com/chatduchaos/ChatDuChaos/main/images/Logo%20TikTok.png" alt="Logo TikTok">
+            </a>
+            <a href="https://www.youtube.com/@ChatDuChaos" target="_blank">
+                <img src="https://raw.githubusercontent.com/chatduchaos/ChatDuChaos/main/images/Logo%20YouTube.png" alt="Logo YouTube">
+            </a>
+            <a href="https://www.instagram.com/chatduchaos" target="_blank">
+                <img src="https://raw.githubusercontent.com/chatduchaos/ChatDuChaos/main/images/Logo%20Instagram.png" alt="Logo Instagram">
+            </a>
+        </div>
     </header>
     <main>
-        <div class="giveaway-embed">
-            <iframe src="https://gleam.io/yNAVP/star-citizen-giveaway-constellation-taurus" frameborder="0" scrolling="no" allowtransparency="true" allowfullscreen="true"></iframe>
+        <div class="gleam-widget">
+            <iframe
+                src="https://gleam.io/yNAVP/star-citizen-giveaway-constellation-taurus"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
         </div>
     </main>
 </body>
