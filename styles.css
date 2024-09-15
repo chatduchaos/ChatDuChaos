@@ -58,7 +58,7 @@ header {
 }
 
 .social-icons img:hover {
-    transform: scale(1.1);
+    transform: scale(1.5);
 }
 
 main {
