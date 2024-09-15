@@ -4,54 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat du Chaos</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html, body {
-            height: 100%;
-        }
-
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: gray;
-            color: white;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .hover-area {
-            position: fixed;
-            left: 0;
-            top: 50%;
-            width: 50px;
-            height: 100px;
-            transform: translateY(-50%);
-            z-index: 1000;
-            cursor: pointer;
-        }
-
-        .meme-image {
-            position: absolute;
-            left: -300px;
-            top: 50%;
-            transform: translateY(-50%);
-            transition: left 0.5s ease-in-out;
-            width: 200px;
-        }
-
-        .hover-area:hover .meme-image {
-            left: 50px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="hover-area">
-        <img src="https://github.com/chatduchaos/ChatDuChaos/blob/main/3x.webp" class="meme-image">
-    </div>
+    <header>
+        <h1><a href="https://twitch.tv/chatduchaos" class="soon-link">Soon™</a></h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.monsieurpc.fr/chat-du-chaos/">Setup PC</a></li>
+                <li><a href="https://gleam.io/yNAVP/star-citizen-giveaway-constellation-taurus">Giveaways</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="https://x.com/chatduchaos" target="_blank"><img src="https://github.com/chatduchaos/ChatDuChaos/blob/main/Logo%20Twitter.png" alt="Twitter"></a>
+            <a href="https://www.youtube.com/@ChatDuChaos" target="_blank"><img src="https://github.com/chatduchaos/ChatDuChaos/blob/main/Logo%20YouTube.png" alt="YouTube"></a>
+            <a href="https://www.tiktok.com/@chatduchaos" target="_blank"><img src="https://github.com/chatduchaos/ChatDuChaos/blob/main/Logo%20TikTok.png" alt="TikTok"></a>
+        </div>
+    </header>
+    <main></main>
 </body>
 </html>
