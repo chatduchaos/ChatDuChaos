@@ -84,22 +84,22 @@ h1 {
     position: fixed;
     left: 0;
     top: 50%;
-    width: 50px; /* Petite zone de survol */
-    height: 100px; /* Hauteur de la zone sensible */
+    width: 50px;
+    height: 100px;
     transform: translateY(-50%);
     z-index: 1000;
-    cursor: pointer; /* Change le curseur en icône de main */
+    cursor: pointer;
 }
 
 .meme-image {
     position: absolute;
-    left: -300px; /* Cache l'image hors de l'écran */
+    left: -300px;
     top: 50%;
     transform: translateY(-50%);
-    transition: left 0.5s ease-in-out; /* Animation fluide */
-    width: 200px; /* Taille du meme */
+    transition: left 0.5s ease-in-out;
+    width: 200px;
 }
 
 .hover-area:hover .meme-image {
-    left: 50px; /* Fait apparaître l'image */
+    left: 50px;
 }
