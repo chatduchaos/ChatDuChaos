@@ -29,8 +29,15 @@ header {
     align-items: center;
 }
 
-header h1 {
-    margin: 0;
+.logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo:hover {
+    text-decoration: underline;
 }
 
 .social-icons {
@@ -43,8 +50,8 @@ header h1 {
 }
 
 .social-icons img {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     transition: transform 0.3s ease;
 }
 
