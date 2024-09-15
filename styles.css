@@ -38,7 +38,6 @@ header {
 }
 
 .nav-left {
-    flex: 1;
     display: flex;
     gap: 20px;
 }
@@ -57,7 +56,7 @@ header {
 }
 
 .nav-center {
-    flex: 2;
+    flex: 1;
     display: flex;
     justify-content: center;
 }
@@ -76,10 +75,9 @@ header {
 }
 
 .social-icons {
-    flex: 1;
     display: flex;
     gap: 15px;
-    justify-content: flex-end;
+    align-items: center;
 }
 
 .social-icons a {
@@ -99,34 +97,18 @@ header {
 main {
     flex-grow: 1;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 80px 20px 20px;
+    padding: 80px 20px 20px; /* Ensure padding is adjusted for header */
     box-sizing: border-box;
-}
-
-.twitch-player {
-    width: 80%;
-    height: 0;
-    padding-bottom: 45%;
-    position: relative;
-    background-color: #000;
-}
-
-.twitch-player iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
 }
 
 .giveaway-embed {
     width: 80%;
     height: 0;
-    padding-bottom: 80%;
+    padding-bottom: 80%; /* Maintain aspect ratio */
     position: relative;
     background-color: #000;
 }
