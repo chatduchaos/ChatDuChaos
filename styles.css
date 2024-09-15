@@ -39,7 +39,7 @@ header {
 }
 
 .logo:hover {
-    transform: scale(1.1); /* Increase the text size on hover */
+    transform: scale(1.6); /* Increase the text size on hover */
     color: #00aaff; /* Change the text color on hover */
 }
 
@@ -59,7 +59,7 @@ header {
 }
 
 .social-icons img:hover {
-    transform: scale(1.1);
+    transform: scale(1.6);
 }
 
 main {
