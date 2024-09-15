@@ -26,21 +26,27 @@ header {
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.2); /* Increase the text size on hover */
+    color: #00aaff; /* Change the text color on hover */
 }
 
 .nav-container {
     display: flex;
-    width: 100%;
     align-items: center;
-    justify-content: space-between;
-    position: relative;
-}
-
-.nav-sections {
-    display: flex;
     gap: 20px;
-    position: absolute;
-    left: 20px;
 }
 
 .nav-link {
@@ -52,20 +58,6 @@ header {
 }
 
 .nav-link:hover {
-    transform: scale(1.2); /* Increase the text size on hover */
-    color: #00aaff; /* Change the text color on hover */
-}
-
-.logo {
-    color: #fff;
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: bold;
-    margin: auto; /* Center text horizontally */
-    transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.logo:hover {
     transform: scale(1.2); /* Increase the text size on hover */
     color: #00aaff; /* Change the text color on hover */
 }
