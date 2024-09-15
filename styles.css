@@ -90,24 +90,32 @@ nav a:hover {
 
 main {
     flex-grow: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
+}
+
+.twitch-player, .giveaway-embed {
+    width: 80%;
+    margin-top: 20px;
     position: relative;
 }
 
-.giveaway-embed {
-    width: 80%;
-    height: 80vh; /* Ensures it takes up 80% of the viewport height */
-    margin-top: 20px;
-    overflow: hidden;
-}
-
-.giveaway-embed iframe {
+.twitch-player iframe, .giveaway-embed iframe {
     width: 100%;
     height: 100%;
     border: none;
+}
+
+.twitch-player {
+    height: 80vh; /* Ensures it takes up 80% of the viewport height */
+}
+
+.giveaway-embed {
+    height: 80vh; /* Ensures it takes up 80% of the viewport height */
+    overflow: auto; /* Allows scrolling within the embed */
+}
+
+.giveaway-embed iframe {
+    height: 100%; /* Makes sure the iframe takes full height of its container */
 }
