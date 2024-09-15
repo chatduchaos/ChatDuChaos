@@ -29,30 +29,32 @@ header {
     justify-content: space-between;
 }
 
-nav {
-    flex-grow: 1;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-nav ul li {
-    margin: 0;
-}
-
-nav ul li a {
+.logo {
     color: #fff;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 24px;
     font-weight: bold;
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
-nav ul li a:hover {
+.logo:hover {
+    transform: scale(1.2);
+    color: #00aaff;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
     transform: scale(1.2);
     color: #00aaff;
 }
@@ -60,10 +62,6 @@ nav ul li a:hover {
 .social-icons {
     display: flex;
     gap: 15px;
-}
-
-.social-icons a {
-    display: block;
 }
 
 .social-icons img {
@@ -76,10 +74,20 @@ nav ul li a:hover {
     transform: scale(1.6);
 }
 
+main {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
 .twitch-player {
     width: 80%;
     height: 0;
-    padding-bottom: 45%; /* Aspect ratio for 16:9 */
+    padding-bottom: 45%;
     position: relative;
     background-color: #000;
 }
