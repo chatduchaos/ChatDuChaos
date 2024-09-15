@@ -10,8 +10,8 @@ html, body {
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f0f0f0; /* Gray background */
-    color: black; /* Text color adjusted for readability */
+    background-color: gray;
+    color: white;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -46,10 +46,6 @@ nav ul li a:hover {
 .social-icons {
     display: flex;
     gap: 15px;
-}
-
-.social-icons a {
-    display: flex;
     align-items: center;
 }
 
@@ -82,4 +78,28 @@ h1 {
 
 .profile-image {
     max-width: 300px;
+}
+
+.hover-area {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    width: 50px; /* Petite zone de survol */
+    height: 100px; /* Hauteur de la zone sensible */
+    transform: translateY(-50%);
+    z-index: 1000;
+    cursor: pointer; /* Change le curseur en icône de main */
+}
+
+.meme-image {
+    position: absolute;
+    left: -300px; /* Cache l'image hors de l'écran */
+    top: 50%;
+    transform: translateY(-50%);
+    transition: left 0.5s ease-in-out; /* Animation fluide */
+    width: 200px; /* Taille du meme */
+}
+
+.hover-area:hover .meme-image {
+    left: 50px; /* Fait apparaître l'image */
 }
