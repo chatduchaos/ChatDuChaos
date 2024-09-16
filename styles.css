@@ -1,3 +1,4 @@
+/* Styles globaux */
 * {
     margin: 0;
     padding: 0;
@@ -19,6 +20,7 @@ body {
     text-align: center;
 }
 
+/* Barre de navigation */
 header {
     background-color: #333;
     color: #fff;
@@ -27,48 +29,40 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.logo {
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-    transition: transform 0.3s ease, color 0.3s ease;
-    padding: 10px;
-    border: 2px solid transparent;
-    border-radius: 5px;
-}
-
-.logo:hover {
-    transform: scale(1.2);
-    color: #00aaff;
-    border-color: #00aaff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 nav {
     display: flex;
-    gap: 20px;
-    flex-grow: 1;
-    justify-content: center;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
-    transition: transform 0.3s ease, color 0.3s ease;
+    font-size: 16px;
     padding: 10px;
-    border: 2px solid transparent;
-    border-radius: 5px;
+    display: inline-block;
 }
 
 nav a:hover {
-    transform: scale(1.2);
     color: #00aaff;
-    border-color: #00aaff;
 }
 
+nav a[href="index.html"] {
+    color: red; /* Couleur rouge pour le lien "ACCUEIL" */
+}
+
+nav a:not([href="index.html"]) {
+    margin-left: 20px;
+}
+
+/* Icônes des réseaux sociaux */
 .social-icons {
     display: flex;
     gap: 15px;
@@ -88,27 +82,42 @@ nav a:hover {
     transform: scale(1.6);
 }
 
+/* Contenu principal */
 main {
+    margin-top: 80px; /* Ajuster pour la hauteur de la barre de navigation */
     flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
+/* Lecteur Twitch */
 .twitch-player {
     width: 80%;
-    max-width: 1200px; /* Optionally, you can limit the max width */
-    height: 80vh; /* Ensures it takes up 80% of the viewport height */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 0;
+    padding-bottom: 45%; /* Aspect ratio pour 16:9 */
+    position: relative;
+    background-color: #000;
 }
 
 .twitch-player iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     border: none;
 }
+
+/* Widget Gleam */
+.gleam-widget {
+    width: 80%;
+    height: 800px; /* Ajustez la hauteur selon vos besoins */
+    margin: 0 auto;
+}
+
+.gleam-widget iframe {
+    width:
