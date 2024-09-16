@@ -66,10 +66,16 @@ main {
     justify-content: space-between;
 }
 
-.twitch-embed,
+.twitch-embed {
+    width: 100%;
+    height: calc(100vh - 80px); /* Remplir toute la page sauf le header */
+    margin-top: 80px; /* Empêche le chevauchement avec le header */
+}
+
 .gleam-widget {
     width: 100%;
     height: calc(100vh - 80px); /* Remplir toute la page sauf le header */
+    margin-top: 80px; /* Empêche le chevauchement avec le header */
 }
 
 footer {
