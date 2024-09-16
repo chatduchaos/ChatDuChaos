@@ -58,6 +58,11 @@ nav ul li a::before {
     transition: background-color 0.3s; /* Transition douce */
 }
 
+nav ul li a.active {
+    color: red; /* Couleur rouge pour le lien actif */
+    background-color: rgba(0, 0, 0, 0.3); /* Fond légèrement plus clair pour le lien actif */
+}
+
 .home-link {
     color: red; /* Couleur rouge pour le bouton Accueil */
 }
