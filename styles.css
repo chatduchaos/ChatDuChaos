@@ -28,6 +28,7 @@ header {
     align-items: center;
     justify-content: space-between;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 }
 
@@ -47,11 +48,17 @@ header {
     color: #00aaff;
     border-color: #00aaff;
 >>>>>>> parent of 7e81a27 (+ texte acceuil rouge)
+=======
+>>>>>>> parent of 37b71b2 (no message)
 }
 
 nav {
     display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    gap: 20px;
+>>>>>>> parent of 37b71b2 (no message)
     align-items: center;
     gap: 15px;
 =======
@@ -64,6 +71,7 @@ nav {
 nav a {
     color: #fff;
     text-decoration: none;
+<<<<<<< HEAD
 <<<<<<< HEAD
     padding: 10px;
     border: 2px solid transparent;
@@ -91,6 +99,28 @@ nav a:hover {
     transform: scale(1.2);
     color: #00aaff;
     border-color: #00aaff;
+=======
+    font-size: 18px;
+    transition: color 0.3s ease, border 0.3s ease;
+    padding: 5px 10px;
+    border: 2px solid transparent; /* Default border */
+}
+
+nav .accueil {
+    color: red; /* Color for accueil link */
+}
+
+nav .twitch {
+    font-size: 20px; /* Smaller size for Twitch link */
+    background: #333; /* Background for Twitch link */
+    padding: 5px 10px; /* Padding for Twitch link */
+    border-radius: 5px; /* Rounded corners for Twitch link */
+}
+
+nav a:hover {
+    color: #00aaff;
+    border-color: #00aaff; /* Border color on hover */
+>>>>>>> parent of 37b71b2 (no message)
 }
 
 .social-icons {
@@ -118,13 +148,17 @@ main {
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
+<<<<<<< HEAD
     display: flex;
     justify-content: center;
     align-items: center;
+=======
+>>>>>>> parent of 37b71b2 (no message)
 }
 
 .twitch-player {
     width: 80%;
+<<<<<<< HEAD
 <<<<<<< HEAD
     height: 0;
     padding-bottom: 45%; /* Aspect ratio for 16:9 */
@@ -138,6 +172,12 @@ main {
     justify-content: center;
     align-items: center;
 >>>>>>> parent of 7e81a27 (+ texte acceuil rouge)
+=======
+    height: 80vh; /* Set height to 80% of viewport height */
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #ccc; /* Optional border for clarity */
+>>>>>>> parent of 37b71b2 (no message)
 }
 
 .twitch-player iframe {
