@@ -44,36 +44,35 @@ nav ul li a:hover {
 }
 
 nav ul li a.active {
-    color: red; /* Couleur rouge pour le lien actif */
+    color: #00aaff; /* Couleur bleue pour le lien actif */
 }
 
-.home-link {
-    color: red; /* Couleur rouge pour le bouton Accueil */
-}
-
-main {
+.main {
     flex-grow: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    padding: 20px; /* Ajouter un peu d'espace autour du widget */
 }
 
-/* Styles spécifiques à la page Twitch */
+.gleam-container {
+    width: 80%; /* 80% de la largeur de la page */
+}
+
+.gleam-widget {
+    width: 100%;
+    height: 800px; /* Ajuster la hauteur selon vos besoins */
+    border: none;
+}
+
 .twitch-container {
+    width: 80%; /* 80% de la largeur de la page */
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    height: calc(100vh - 60px); /* Ajuster en fonction de la hauteur du header */
+    justify-content: center;
 }
 
 .twitch-video {
-    flex: 8; /* 80% de la largeur */
-    height: 100%;
-}
-
-.twitch-chat {
-    flex: 4; /* 20% de la largeur */
-    height: 100%;
-    border-left: 2px solid #222; /* Ligne de séparation */
+    width: 100%;
+    height: 100%; /* Ajuster la hauteur selon vos besoins */
+    aspect-ratio: 16/9; /* Maintenir un ratio d'aspect 16:9 pour le lecteur */
 }
