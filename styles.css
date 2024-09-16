@@ -32,7 +32,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: white; /* Couleur des liens */
     text-decoration: none;
     font-weight: bold;
     padding: 10px;
@@ -57,4 +57,23 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+/* Styles spécifiques à la page Twitch */
+.twitch-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    height: calc(100vh - 60px); /* Ajuster en fonction de la hauteur du header */
+}
+
+.twitch-video {
+    flex: 8; /* 80% de la largeur */
+    height: 100%;
+}
+
+.twitch-chat {
+    flex: 4; /* 20% de la largeur */
+    height: 100%;
+    border-left: 2px solid #222; /* Ligne de séparation */
 }

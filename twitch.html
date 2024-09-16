@@ -20,8 +20,23 @@
         </nav>
     </header>
     <main>
-        <h1>Page Twitch</h1>
-        <!-- Contenu spécifique à la page Twitch -->
+        <div class="twitch-container">
+            <iframe
+                src="https://player.twitch.tv/?channel=chatduchaos&parent=chatduchaos.com"
+                class="twitch-video"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+            <div class="twitch-chat">
+                <iframe
+                    src="https://www.twitch.tv/embed/chat?channel=chatduchaos&parent=chatduchaos.com"
+                    frameborder="0"
+                    scrolling="no"
+                    height="100%"
+                    width="100%">
+                </iframe>
+            </div>
+        </div>
     </main>
 </body>
 </html>
