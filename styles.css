@@ -1,3 +1,4 @@
+/* CSS global */
 * {
     margin: 0;
     padding: 0;
@@ -14,11 +15,9 @@ body {
     color: #333;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
 }
 
+/* Barre de navigation */
 header {
     background-color: #333;
     color: #fff;
@@ -27,11 +26,14 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 nav {
     display: flex;
-    gap: 20px;
     align-items: center;
     width: 100%;
 }
@@ -40,25 +42,22 @@ nav a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
-    transition: color 0.3s ease, border 0.3s ease;
-    padding: 5px 10px;
-    border: 2px solid transparent; /* Default border */
-}
-
-nav .accueil {
-    color: red; /* Color for accueil link */
-}
-
-nav .twitch {
-    font-size: 20px; /* Smaller size for Twitch link */
-    background: #333; /* Background for Twitch link */
-    padding: 5px 10px; /* Padding for Twitch link */
-    border-radius: 5px; /* Rounded corners for Twitch link */
+    font-weight: bold;
+    margin: 0 15px;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 nav a:hover {
+    transform: scale(1.2);
+}
+
+nav .active {
     color: #00aaff;
-    border-color: #00aaff; /* Border color on hover */
+    border-bottom: 2px solid #00aaff;
+}
+
+nav .twitch {
+    margin-left: auto;
 }
 
 .social-icons {
@@ -80,22 +79,20 @@ nav a:hover {
     transform: scale(1.6);
 }
 
+/* Contenu principal */
 main {
     flex-grow: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
+    padding-top: 80px; /* Adjust to account for fixed header height */
 }
 
 .gleam-widget {
     width: 80%;
-    height: 80vh; /* Set height to 80% of viewport height */
-    position: relative;
+    height: 80vh; /* 80% of viewport height */
     background-color: #fff;
-    border: 1px solid #ccc; /* Optional border for clarity */
 }
 
 .gleam-widget iframe {
