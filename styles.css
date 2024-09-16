@@ -1,78 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html, body {
     height: 100%;
-    margin: 0;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #333; /* Couleur de fond */
+    background-color: #333; /* Arrière-plan gris foncé */
     color: white;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    margin: 0;
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #333, #555); /* Dégradé pour le header */
+    padding: 15px 30px;
     position: fixed;
     top: 0;
-    left: 0;
     width: 100%;
-    background: linear-gradient(to bottom, #555, #333); /* Dégradé du header */
-    padding: 15px 30px;
-    z-index: 1000; /* Garder le header au-dessus du contenu */
-    display: flex;
-    justify-content: space-between; /* Espace entre les éléments */
-    align-items: center; /* Aligne les éléments verticalement */
+    z-index: 1000;
 }
 
 nav {
-    flex-grow: 1; /* Utilise l'espace restant pour le menu de navigation */
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 1;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: flex-start; /* Alignement à gauche */
     gap: 20px;
-    margin: 0;
-    padding: 0;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
     padding: 10px;
+    border: 2px solid transparent;
+}
+
+nav ul li a.active {
+    color: #00aaff;
+    border-color: #00aaff;
 }
 
 nav ul li a:hover {
     color: #00aaff;
 }
 
-nav ul li a.active {
-    color: #00aaff;
-}
-
 .header-images {
     display: flex;
-    gap: 10px; /* Espacement entre les images */
+    gap: 10px;
 }
 
 .header-images img {
     width: 40px;
     height: 40px;
+    /* Assure que les logos ne sortent pas du cadre */
 }
 
 main {
-    flex-grow: 1; /* Permet à l'élément main de prendre tout l'espace disponible */
-    margin-top: 80px; /* Ajuste pour la hauteur du header */
+    flex-grow: 1;
     display: flex;
-    justify-content: center; /* Centre le contenu horizontalement */
-    align-items: center; /* Centre le contenu verticalement */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px; /* Ajuster en fonction de la hauteur du header */
+}
+
+main iframe {
+    width: 100%;
+    height: calc(100vh - 80px); /* Remplit 80% de la hauteur restante */
+    border: none;
 }
 
 iframe {
     width: 100%;
-    height: calc(100vh - 80px); /* Remplit toute la hauteur de la vue moins la hauteur du header */
-    border: none; /* Supprime les bordures de l'iframe */
+    height: calc(100vh - 80px); /* Remplit 80% de la hauteur restante */
 }
+
