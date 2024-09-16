@@ -40,7 +40,9 @@ nav a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, border 0.3s ease;
+    padding: 5px 10px;
+    border: 2px solid transparent; /* Default border */
 }
 
 nav .accueil {
@@ -56,6 +58,7 @@ nav .twitch {
 
 nav a:hover {
     color: #00aaff;
+    border-color: #00aaff; /* Border color on hover */
 }
 
 .social-icons {
