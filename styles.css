@@ -28,7 +28,6 @@ header {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
@@ -38,7 +37,6 @@ header {
 nav {
     display: flex;
     width: 100%;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -47,11 +45,6 @@ nav a {
     text-decoration: none;
     font-size: 16px;
     padding: 10px;
-    display: inline-block;
-}
-
-nav a:hover {
-    color: #00aaff;
 }
 
 nav a[href="index.html"] {
@@ -60,6 +53,10 @@ nav a[href="index.html"] {
 
 nav a:not([href="index.html"]) {
     margin-left: 20px;
+}
+
+nav a:hover {
+    color: #00aaff;
 }
 
 /* Icônes des réseaux sociaux */
@@ -120,4 +117,7 @@ main {
 }
 
 .gleam-widget iframe {
-    width:
+    width: 100%;
+    height: 100%;
+    border: none;
+}
