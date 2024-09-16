@@ -1,3 +1,4 @@
+/* Styles généraux */
 * {
     margin: 0;
     padding: 0;
@@ -45,7 +46,9 @@ nav ul li a {
     color: white;
     text-decoration: none;
     padding: 10px;
-    border: 2px solid transparent;
+    border: 2px solid transparent; /* Bordure transparente par défaut */
+    background-color: transparent; /* Fond transparent par défaut */
+    transition: background-color 0.3s, color 0.3s; /* Transition fluide pour fond et couleur */
 }
 
 nav ul li a.active {
@@ -54,7 +57,8 @@ nav ul li a.active {
 }
 
 nav ul li a:hover {
-    color: #00aaff;
+    color: #00aaff; /* Couleur du texte au survol */
+    background-color: rgba(0, 0, 0, 0.6); /* Fond plus sombre que le header au survol */
 }
 
 .header-images {
@@ -65,7 +69,6 @@ nav ul li a:hover {
 .header-images img {
     width: 40px;
     height: 40px;
-    /* Assure que les logos ne sortent pas du cadre */
 }
 
 main {
@@ -77,14 +80,13 @@ main {
     margin-top: 80px; /* Ajuster en fonction de la hauteur du header */
 }
 
-main iframe {
-    width: 100%;
-    height: calc(100vh - 80px); /* Remplit 80% de la hauteur restante */
-    border: none;
+.profile-image {
+    width: 40%; /* 40% de la largeur de la page */
+    height: auto;
 }
 
 iframe {
     width: 100%;
-    height: calc(100vh - 80px); /* Remplit 80% de la hauteur restante */
+    height: calc(100vh - 80px); /* Remplit 80% de la hauteur restante en dessous du header */
+    border: none;
 }
-
