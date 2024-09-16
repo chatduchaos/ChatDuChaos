@@ -1,20 +1,15 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 html, body {
     height: 100%;
+    margin: 0;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #333; /* Fond gris foncé pour le body */
+    background-color: #333; /* Couleur de fond */
     color: white;
-    height: 100%;
     display: flex;
     flex-direction: column;
+    margin: 0;
 }
 
 header {
@@ -25,6 +20,13 @@ header {
     background: linear-gradient(to bottom, #555, #333); /* Dégradé du header */
     padding: 15px 30px;
     z-index: 1000; /* Garder le header au-dessus du contenu */
+    display: flex;
+    justify-content: space-between; /* Espace entre les éléments */
+    align-items: center; /* Aligne les éléments verticalement */
+}
+
+nav {
+    flex-grow: 1; /* Utilise l'espace restant pour le menu de navigation */
 }
 
 nav ul {
@@ -32,6 +34,8 @@ nav ul {
     display: flex;
     justify-content: flex-start; /* Alignement à gauche */
     gap: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li a {
@@ -49,37 +53,26 @@ nav ul li a.active {
     color: #00aaff;
 }
 
+.header-images {
+    display: flex;
+    gap: 10px; /* Espacement entre les images */
+}
+
+.header-images img {
+    width: 40px;
+    height: 40px;
+}
+
 main {
-    flex-grow: 1;
+    flex-grow: 1; /* Permet à l'élément main de prendre tout l'espace disponible */
+    margin-top: 80px; /* Ajuste pour la hauteur du header */
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 80px; /* Espace pour que le contenu ne soit pas sous le header */
+    justify-content: center; /* Centre le contenu horizontalement */
+    align-items: center; /* Centre le contenu verticalement */
 }
 
-.container {
-    display: flex;
-    width: 80%;
-    margin: 0 auto;
-    justify-content: space-between;
-}
-
-.twitch-embed {
+iframe {
     width: 100%;
-    height: calc(100vh - 80px); /* Remplir toute la page sauf le header */
-    margin-top: 80px; /* Empêche le chevauchement avec le header */
-}
-
-.gleam-widget {
-    width: 100%;
-    height: calc(100vh - 80px); /* Remplir toute la page sauf le header */
-    margin-top: 80px; /* Empêche le chevauchement avec le header */
-}
-
-footer {
-    background-color: #333;
-    padding: 10px;
-    text-align: center;
+    height: calc(100vh - 80px); /* Remplit toute la hauteur de la vue moins la hauteur du header */
+    border: none; /* Supprime les bordures de l'iframe */
 }
