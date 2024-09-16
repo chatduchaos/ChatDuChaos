@@ -6,192 +6,46 @@
 
 html, body {
     height: 100%;
-    font-family: 'Roboto', sans-serif;
 }
 
 body {
-    background-color: #333; /* Gris foncé */
-    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    background-color: #333; /* Fond gris foncé */
+    color: white;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    width: 100%;
+    background-color: #222; /* Gris encore plus foncé pour le header */
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-}
-
-.logo {
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-    transition: transform 0.3s ease, color 0.3s ease;
-    padding: 10px;
-    border: 2px solid transparent;
-    border-radius: 5px;
-}
-
-.logo:hover {
-    transform: scale(1.2);
-    color: #00aaff;
-    border-color: #00aaff;
->>>>>>> parent of 7e81a27 (+ texte acceuil rouge)
-=======
->>>>>>> parent of 37b71b2 (no message)
-}
-
-nav {
-    display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
     gap: 20px;
->>>>>>> parent of 37b71b2 (no message)
-    align-items: center;
-    gap: 15px;
-=======
-    gap: 20px;
-    flex-grow: 1;
-    justify-content: center;
->>>>>>> parent of 7e81a27 (+ texte acceuil rouge)
 }
 
-nav a {
-    color: #fff;
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
     text-decoration: none;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    padding: 10px;
-    border: 2px solid transparent;
-    transition: transform 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-}
-
-nav a:hover {
-    transform: scale(1.1);
-    color: #00aaff; /* Bleu pour l'effet de survol */
-    border-color: #00aaff;
-}
-
-nav .home-link {
-    color: #ff0000; /* Rouge pour le lien Accueil */
     font-weight: bold;
-=======
-    font-size: 18px;
-    transition: transform 0.3s ease, color 0.3s ease;
     padding: 10px;
-    border: 2px solid transparent;
-    border-radius: 5px;
 }
 
-nav a:hover {
-    transform: scale(1.2);
+nav ul li a:hover {
     color: #00aaff;
-    border-color: #00aaff;
-=======
-    font-size: 18px;
-    transition: color 0.3s ease, border 0.3s ease;
-    padding: 5px 10px;
-    border: 2px solid transparent; /* Default border */
-}
-
-nav .accueil {
-    color: red; /* Color for accueil link */
-}
-
-nav .twitch {
-    font-size: 20px; /* Smaller size for Twitch link */
-    background: #333; /* Background for Twitch link */
-    padding: 5px 10px; /* Padding for Twitch link */
-    border-radius: 5px; /* Rounded corners for Twitch link */
-}
-
-nav a:hover {
-    color: #00aaff;
-    border-color: #00aaff; /* Border color on hover */
->>>>>>> parent of 37b71b2 (no message)
-}
-
-.social-icons {
-    display: flex;
-    gap: 15px;
-}
-
-.social-icons a {
-    display: block;
-}
-
-.social-icons img {
-    width: 40px;
-    height: 40px;
-    transition: transform 0.3s ease;
-}
-
-.social-icons img:hover {
-    transform: scale(1.6);
->>>>>>> parent of 7e81a27 (+ texte acceuil rouge)
 }
 
 main {
     flex-grow: 1;
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-<<<<<<< HEAD
     display: flex;
     justify-content: center;
     align-items: center;
-=======
->>>>>>> parent of 37b71b2 (no message)
+    text-align: center;
 }
-
-.twitch-player {
-    width: 80%;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    height: 0;
-    padding-bottom: 45%; /* Aspect ratio for 16:9 */
-    position: relative;
-    background-color: #000;
-    margin: 20px 0;
-=======
-    max-width: 1200px; /* Optionally, you can limit the max width */
-    height: 80vh; /* Ensures it takes up 80% of the viewport height */
-    display: flex;
-    justify-content: center;
-    align-items: center;
->>>>>>> parent of 7e81a27 (+ texte acceuil rouge)
-=======
-    height: 80vh; /* Set height to 80% of viewport height */
-    position: relative;
-    background-color: #fff;
-    border: 1px solid #ccc; /* Optional border for clarity */
->>>>>>> parent of 37b71b2 (no message)
-}
-
-.twitch-player iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-<<<<<<< HEAD
-
-.gleam-widget {
-    width: 80%;
-    height: 80vh; /* Adjust height as needed */
-    margin: 20px 0;
-    overflow: auto;
-}
-=======
->>>>>>> parent of 7e81a27 (+ texte acceuil rouge)
