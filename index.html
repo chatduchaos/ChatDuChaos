@@ -19,7 +19,7 @@
             </ul>
         </nav>
         <div class="social-icons">
-            <a href="https://www.twitch.tv/chatduchaos" target="_blank">
+            <a href="https://www.twitch.tv/chatduchaos" target="_blank" id="twitch-logo">
                 <img src="https://raw.githubusercontent.com/chatduchaos/ChatDuChaos/main/images/Twitch%20Logo.png" alt="Twitch">
             </a>
             <a href="https://www.youtube.com/@ChatDuChaos" target="_blank">
@@ -39,30 +39,17 @@
     
     <main>
         <img src="https://raw.githubusercontent.com/chatduchaos/ChatDuChaos/main/images/ChatDuChaos%20photo%20de%20profil%20transparent.png" alt="Profile" class="profile-image">
+        
+        <div class="hidden-embed" id="twitch-embed">
+            <iframe src="https://player.twitch.tv/?channel=chatduchaos&parent=chatduchaos.com" allowfullscreen></iframe>
+        </div>
     </main>
     
-    <div class="twitch-container">
-        <a href="#" class="twitch-logo" onclick="toggleTwitchEmbed(); return false;">
-            <img src="https://raw.githubusercontent.com/chatduchaos/ChatDuChaos/main/images/Twitch%20Logo.png" alt="Twitch">
-        </a>
-        <iframe id="twitch-embed" src="https://player.twitch.tv/?channel=chatduchaos&parent=chatduchaos.com" 
-            allow="autoplay; encrypted-media" style="display:none;"></iframe>
-    </div>
-
     <footer>
         <p><a href="mailto:chatduchaos@gmail.com">Contactez-moi par email</a></p>
         <p>&copy; 2024 ChatDuChaos. Tous droits réservés.</p>
     </footer>
 
-    <script>
-        function toggleTwitchEmbed() {
-            const embed = document.getElementById('twitch-embed');
-            if (embed.style.display === 'none') {
-                embed.style.display = 'block'; // Affiche l'embed
-            } else {
-                embed.style.display = 'none'; // Cache l'embed
-            }
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
