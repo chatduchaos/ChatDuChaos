@@ -117,25 +117,18 @@ footer a:hover {
     height: 100%;
 }
 
-/* Styles spécifiques pour youtube.html */
+/* Youtube Page CSS */
 .youtube-container {
     display: flex;
-    height: calc(100% - 160px); /* Ajuste pour le header et le footer */
 }
 
 .youtube-video {
     flex: 1;
-    height: 100%;
+    margin: 10px;
 }
 
-.youtube-shorts {
-    display: flex;
-    flex-direction: column;
+.youtube-short {
     flex: 1;
+    margin: 10px;
     height: 100%;
-}
-
-.youtube-shorts iframe {
-    flex: 1;
-    margin: 5px;
 }
