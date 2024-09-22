@@ -1,22 +1,23 @@
 body {
-    background-color: #808080; /* gris */
+    background-color: #444;
+    color: white;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    color: #ffffff; /* Texte blanc */
+    padding: 0;
 }
 
 header {
-    background: linear-gradient(#505050, #303030);
-    padding: 1em;
+    background: linear-gradient(#222, #444);
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 }
 
 nav ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
+    list-style: none;
     padding: 0;
+    display: flex;
 }
 
 nav ul li {
@@ -28,15 +29,15 @@ nav ul li a {
     text-decoration: none;
     padding: 10px;
     border: 2px solid transparent;
+    font-size: 18px;
 }
 
 nav ul li a:hover {
-    border: 2px solid #ffffff;
+    border: 2px solid white;
 }
 
 .social-icons {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
 }
 
@@ -51,20 +52,31 @@ nav ul li a:hover {
 }
 
 .social-icons img:hover {
-    transform: scale(1.5); /* Grossissement à 150% */
+    transform: scale(1.5);
 }
 
-.embed-container {
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 120px);
     position: relative;
-    width: 100%;
-    height: calc(100vh - 120px); /* Ajuster selon la hauteur du header et footer */
-    display: none; /* Masqué par défaut */
+}
+
+#twitch-embed {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 15%;
+    height: 15%;
+    display: none;
 }
 
 footer {
-    background: linear-gradient(#505050, #303030);
+    background: linear-gradient(#222, #444);
+    padding: 10px;
     text-align: center;
-    padding: 1em;
-    margin-top: auto;
-    color: white; /* Texte blanc */
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
