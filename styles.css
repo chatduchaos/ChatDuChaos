@@ -3,6 +3,9 @@ body {
     color: white;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -42,4 +45,5 @@ footer {
     width: 100%;
     text-align: center;
     padding: 1rem;
+    margin-top: auto; /* Maintenir le footer en bas */
 }
