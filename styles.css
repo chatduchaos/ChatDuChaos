@@ -1,75 +1,45 @@
-
 body {
-    background-color: #f0f0f0; /* Couleur gris clair */
-    color: #fff; /* Couleur du texte */
+    background-color: #f0f0f0; /* Gris clair */
+    color: white;
     margin: 0;
-    font-family: Arial, sans-serif;
+    padding: 0;
 }
 
 header {
-    background: linear-gradient(to bottom, #333, #444); /* Dégradé pour le header */
-    height: 60px; /* Hauteur du header réduite */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
+    background: linear-gradient(to bottom, #2c2c2c, #4c4c4c);
+    padding: 1rem;
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
     display: flex;
-    justify-content: center;
-    margin: 0;
+    justify-content: center; /* Centrer les boutons de navigation */
+    list-style: none;
+    padding: 0;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 15px; /* Espace entre les boutons */
 }
 
 nav ul li a {
-    color: #fff;
     text-decoration: none;
-    font-size: 18px; /* Agrandir le texte */
-    padding: 10px; /* Ajout de padding pour l'encadré */
-    border: 2px solid transparent; /* Encadré */
-    border-radius: 5px; /* Coins arrondis */
-    transition: border 0.3s; /* Transition pour le changement de couleur */
-}
-
-nav ul li a:hover {
-    border-color: #fff; /* Couleur de l'encadré au survol */
+    color: white;
+    padding: 10px 15px; /* Padding pour les boutons */
+    border: 2px solid white; /* Bordure blanche */
 }
 
 .social-icons {
-    display: flex;
-    align-items: center;
-}
-
-.social-icon {
-    width: 40px;
-    height: 40px;
-    margin-left: 10px; /* Espace entre les icônes */
-    transition: transform 0.2s; /* Animation de grossissement */
-}
-
-.social-icon:hover {
-    transform: scale(1.5); /* Grossissement à 150% */
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 footer {
-    background: linear-gradient(to bottom, #333, #444); /* Dégradé pour le footer */
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
+    background: linear-gradient(to bottom, #2c2c2c, #4c4c4c);
     position: relative;
     bottom: 0;
     width: 100%;
-}
-
-#twitch-embed {
-    position: fixed;
-    top: 60px; /* Positionné juste en dessous du header */
-    right: 0;
-    z-index: 10; /* Au-dessus d'autres éléments */
+    text-align: center;
+    padding: 1rem;
 }
