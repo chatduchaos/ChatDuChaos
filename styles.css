@@ -1,71 +1,70 @@
 body {
-    background-color: #2c2c2c;
-    color: white;
+    background-color: #808080; /* Fond gris */
     margin: 0;
-    font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
 header {
-    background: linear-gradient(#404040, #2c2c2c);
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background: linear-gradient(#505050, #303030);
+    padding: 20px;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
     display: flex;
+    justify-content: center; /* Centrer les boutons de navigation */
+    padding: 0;
 }
 
 nav ul li {
+    list-style-type: none;
     margin: 0 15px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: white;
-    padding: 8px 15px;
-    border: 1px solid white;
-    border-radius: 5px;
+    border: 2px solid white; /* Encadrement des boutons */
+    padding: 10px 15px; /* Taille des boutons */
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .social-icons {
     display: flex;
-    align-items: center;
+    justify-content: flex-end; /* Alignement à droite */
+    padding: 10px 0;
 }
 
 .social-icons a {
-    margin-left: 10px;
+    margin-left: 15px; /* Espace entre les icônes */
 }
 
 .social-icons img {
-    width: 40px;
+    width: 40px; /* Taille des icônes */
     height: 40px;
-    transition: transform 0.3s;
+    transition: transform 0.3s; /* Effet de grossissement */
 }
 
 .social-icons img:hover {
-    transform: scale(1.5);
+    transform: scale(1.5); /* Grossissement à 150% */
+}
+
+main {
+    flex: 1;
+    text-align: center; /* Centre le contenu */
 }
 
 .twitch-embed {
-    display: none;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 10%;
-    height: auto;
+    display: none; /* Masqué par défaut */
 }
 
 footer {
-    background: linear-gradient(#404040, #2c2c2c);
-    padding: 10px;
-    margin-top: auto;
+    background: linear-gradient(#505050, #303030);
     text-align: center;
+    padding: 10px;
 }

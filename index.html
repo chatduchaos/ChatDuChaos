@@ -20,7 +20,7 @@
         </nav>
         <div class="social-icons">
             <a href="https://www.twitch.tv/chatduchaos" target="_blank">
-                <img src="https://raw.githubusercontent.com/chatduchaos/ChatDuChaos/main/images/Twitch%20Logo.png" alt="Twitch" class="twitch-logo">
+                <img src="https://raw.githubusercontent.com/chatduchaos/ChatDuChaos/main/images/Twitch%20Logo.png" alt="Twitch">
             </a>
             <a href="https://www.youtube.com/@ChatDuChaos" target="_blank">
                 <img src="https://raw.githubusercontent.com/chatduchaos/ChatDuChaos/main/images/Logo%20YouTube.png" alt="YouTube">
@@ -38,15 +38,13 @@
     </header>
     
     <main>
-        <h1>Bienvenue sur ChatDuChaos!</h1>
-        <p>Contenu principal de la page d'accueil.</p>
+        <img src="https://github.com/chatduchaos/ChatDuChaos/blob/main/images/ChatDuChaos%20photo%20de%20profil%20transparent.png?raw=true" alt="Photo de profil" style="width: 40%; display: block; margin: 0 auto;">
         <div class="twitch-embed" id="twitch-embed">
             <iframe
                 src="https://player.twitch.tv/?channel=chatduchaos&parent=chatduchaos.com"
-                width="100%"
                 height="100%"
-                allowfullscreen
-                muted>
+                width="100%"
+                allowfullscreen>
             </iframe>
         </div>
     </main>
@@ -55,18 +53,7 @@
         <p><a href="mailto:chatduchaos@gmail.com">Contactez-moi par email</a></p>
         <p>&copy; 2024 ChatDuChaos. Tous droits réservés.</p>
     </footer>
-
-    <script>
-        const twitchLogo = document.querySelector('.twitch-logo');
-        const twitchEmbed = document.getElementById('twitch-embed');
-
-        twitchLogo.addEventListener('mouseover', () => {
-            twitchEmbed.style.display = 'block';
-        });
-
-        twitchLogo.addEventListener('mouseout', () => {
-            twitchEmbed.style.display = 'none';
-        });
-    </script>
+    
+    <script src="script.js"></script>
 </body>
 </html>
