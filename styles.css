@@ -11,6 +11,7 @@ body {
 header {
     background: linear-gradient(to bottom, #2c2c2c, #4c4c4c);
     padding: 1rem;
+    position: relative; /* Nécessaire pour le positionnement des éléments à l'intérieur */
 }
 
 nav ul {
@@ -36,6 +37,14 @@ nav ul li a {
     right: 1rem;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.embed-container {
+    position: absolute;
+    top: 60px; /* Ajuster selon la hauteur du header */
+    right: 0;
+    width: 15%; /* Largeur de l'embed */
+    display: none; /* Caché par défaut */
 }
 
 footer {
