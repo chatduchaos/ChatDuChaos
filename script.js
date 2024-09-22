@@ -1,4 +1,4 @@
-const twitchIcon = document.querySelector('a[href*="twitch"]');
+const twitchIcon = document.getElementById('twitch-icon');
 const embed = document.getElementById('twitch-embed');
 
 twitchIcon.addEventListener('mouseover', () => {
