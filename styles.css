@@ -62,6 +62,11 @@ nav ul li a:hover {
 .social-icons img {
     width: 40px;
     height: 40px;
+    transition: transform 0.3s ease; /* Ajoute une transition pour l'effet */
+}
+
+.social-icons img:hover {
+    transform: scale(1.5); /* Grossissement à 150% */
 }
 
 main {
