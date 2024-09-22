@@ -1,66 +1,73 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-header, footer {
-    background-color: #333;
-    color: #fff;
+header {
+    background: #f1f1f1;
+    padding: 20px;
     text-align: center;
-    padding: 1em 0;
+}
+
+.site-title {
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+nav {
+    margin: 10px 0;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
 }
 
 nav ul li {
-    display: inline-block;
-    margin-right: 1em;
+    display: inline;
+    margin: 0 15px;
 }
 
-nav a {
-    color: #fff;
+nav ul li a {
     text-decoration: none;
-    padding: 0.5em 1em;
-    transition: background-color 0.3s;
-}
-
-nav a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border: 2px solid #333; /* Encadré autour du bouton */
 }
 
 .social-icons {
-    text-align: right;
+    margin-top: 10px;
 }
 
-.social-icons a img {
-    width: 40px;
-    height: 40px;
-    transition: transform 0.3s;
+.social-icons a {
+    margin: 0 10px;
 }
 
-.social-icons a img:hover {
-    transform: scale(1.5);
+.social-icons img {
+    width: 40px; /* Taille des icônes */
+    height: 40px; /* Taille des icônes */
+    transition: transform 0.3s; /* Effet de transition pour le grossissement */
+}
+
+.social-icons img:hover {
+    transform: scale(1.5); /* Grossissement à 150% */
 }
 
 main {
-    padding: 2em;
+    flex: 1;
+    padding: 20px;
+    position: relative; /* Pour positionner l'embed Twitch */
+}
+
+footer {
+    background: #f1f1f1;
     text-align: center;
+    padding: 10px;
+    position: relative; /* Positionnement pour le bas de page */
 }
 
-iframe {
-    position: fixed;
-    top: 10%;
-    right: 0;
-    width: 10%;
-    height: 20%;
-    display: none;
-    border: none;
-}
-
-#twitch-logo:hover + iframe {
-    display: block;
+footer p {
+    margin: 5px 0;
 }
