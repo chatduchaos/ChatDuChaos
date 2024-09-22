@@ -1,15 +1,23 @@
 body {
-    background-color: #f0f0f0;
+    background-color: #f0f0f0; /* gris clair */
     margin: 0;
-    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
-    background: linear-gradient(to bottom, #444, #222);
-    padding: 10px 0;
+    background: linear-gradient(to bottom, #4a4a4a, #2a2a2a); /* dégradé gris plus sombre */
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Centre les éléments du nav */
 }
 
 nav ul {
@@ -22,55 +30,32 @@ nav li {
     margin: 0 20px;
 }
 
-nav a {
-    text-decoration: none;
-    color: white;
-    padding: 10px 15px;
-    border: 2px solid transparent;
-    border-radius: 5px;
-}
-
-nav a:hover {
-    border: 2px solid white;
-}
-
 .social-icons {
     display: flex;
     align-items: center;
 }
 
 .social-icons a {
-    margin-left: 10px;
+    margin: 0 10px;
 }
 
 .social-icons img {
-    width: 40px;
-    height: 40px;
-    transition: transform 0.2s;
+    width: 40px; /* taille en pixels */
+    height: 40px; /* taille en pixels */
+    transition: transform 0.3s;
 }
 
 .social-icons img:hover {
-    transform: scale(1.5);
+    transform: scale(1.5); /* effet de grossissement */
 }
 
 main {
-    text-align: center;
-}
-
-.twitch-embed {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 10%;
-    height: auto;
+    flex: 1;
+    position: relative;
 }
 
 footer {
-    background: linear-gradient(to bottom, #444, #222);
-    color: white;
+    background: linear-gradient(to bottom, #4a4a4a, #2a2a2a); /* dégradé gris plus sombre */
     text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    padding: 10px;
 }
