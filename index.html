@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Twitch - ChatDuChaos</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -37,23 +36,28 @@
             </a>
         </div>
     </header>
-    
+
     <main>
-        <div class="embed-container">
-            <iframe
-                id="twitch-embed"
-                src="https://player.twitch.tv/?channel=chatduchaos&parent=chatduchaos.com"
-                height="15%"
-                width="100%"
-                allowfullscreen
-                style="display: none;">
-            </iframe>
-        </div>
+        <iframe id="twitch-embed" src="https://player.twitch.tv/?channel=chatduchaos&parent=chatduchaos.com" 
+            height="15%" width="100%" allowfullscreen style="display: none;"></iframe>
     </main>
-    
+
     <footer>
         <p><a href="mailto:chatduchaos@gmail.com">Contactez-moi par email</a></p>
         <p>&copy; 2024 ChatDuChaos. Tous droits réservés.</p>
     </footer>
+
+    <script>
+        const twitchLogo = document.querySelector('.social-icons a:first-child');
+        const twitchEmbed = document.getElementById('twitch-embed');
+
+        twitchLogo.addEventListener('mouseover', () => {
+            twitchEmbed.style.display = 'block';
+        });
+
+        twitchLogo.addEventListener('mouseout', () => {
+            twitchEmbed.style.display = 'none';
+        });
+    </script>
 </body>
 </html>
