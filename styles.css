@@ -62,11 +62,11 @@ nav ul li a:hover {
 .social-icons img {
     width: 40px;
     height: 40px;
-    transition: transform 0.2s;
+    transition: transform 0.2s; /* Pour l'effet de grossissement */
 }
 
 .social-icons img:hover {
-    transform: scale(1.5);
+    transform: scale(1.5); /* Grossissement à 150% */
 }
 
 main {
@@ -106,10 +106,9 @@ footer a:hover {
 .hidden-embed {
     display: none;
     position: fixed;
-    bottom: 0;
-    left: 0;
+    top: 10%;
+    right: 0;
     width: 10%;
-    height: auto;
     z-index: 1000;
 }
 

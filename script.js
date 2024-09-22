@@ -1,14 +1,10 @@
-const twitchLogo = document.getElementById('twitch-logo');
-const twitchEmbed = document.getElementById('twitch-embed');
+const twitchIcon = document.querySelector('a[href*="twitch"]');
+const embed = document.getElementById('twitch-embed');
 
-twitchLogo.addEventListener('mouseenter', () => {
-    twitchEmbed.style.display = 'block';
+twitchIcon.addEventListener('mouseover', () => {
+    embed.style.display = 'block';
 });
 
-twitchLogo.addEventListener('mouseleave', () => {
-    twitchEmbed.style.display = 'none';
-});
-
-twitchLogo.addEventListener('click', () => {
-    twitchEmbed.style.display = 'block';
+twitchIcon.addEventListener('mouseout', () => {
+    embed.style.display = 'none';
 });
