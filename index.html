@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil - ChatDuChaos</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -20,19 +19,35 @@
             </ul>
         </nav>
         <div class="social-icons">
-            <a href="https://www.twitch.tv/chatduchaos" target="_blank"><img src="https://raw.githubusercontent.com/chatduchaos/ChatDuChaos/main/images/Twitch%20Logo.png" alt="Twitch"></a>
-            <a href="https://www.youtube.com/@ChatDuChaos" target="_blank"><img src="https://raw.githubusercontent.com/chatduchaos/ChatDuChaos/main/images/Logo%20YouTube.png" alt="YouTube"></a>
-            <a href="https://www.tiktok.com/@chatduchaos" target="_blank"><img src="https://raw.githubusercontent.com/chatduchaos/ChatDuChaos/main/images/Logo%20TikTok.png" alt="TikTok"></a>
-            <a href="https://www.instagram.com/chatduchaos/" target="_blank"><img src="https://raw.githubusercontent.com/chatduchaos/ChatDuChaos/main/images/Logo%20Instagram.png" alt="Instagram"></a>
-            <a href="https://x.com/chatduchaos" target="_blank"><img src="https://raw.githubusercontent.com/chatduchaos/ChatDuChaos/main/images/Logo%20X.png" alt="Twitter"></a>
+            <a href="https://www.twitch.tv/chatduchaos" target="_blank">
+                <img src="https://raw.githubusercontent.com/chatduchaos/ChatDuChaos/main/images/Twitch%20Logo.png" alt="Twitch" class="twitch-logo">
+            </a>
+            <a href="https://www.youtube.com/@ChatDuChaos" target="_blank">
+                <img src="https://raw.githubusercontent.com/chatduchaos/ChatDuChaos/main/images/Logo%20YouTube.png" alt="YouTube">
+            </a>
+            <a href="https://www.tiktok.com/@chatduchaos" target="_blank">
+                <img src="https://raw.githubusercontent.com/chatduchaos/ChatDuChaos/main/images/Logo%20TikTok.png" alt="TikTok">
+            </a>
+            <a href="https://www.instagram.com/chatduchaos/" target="_blank">
+                <img src="https://raw.githubusercontent.com/chatduchaos/ChatDuChaos/main/images/Logo%20Instagram.png" alt="Instagram">
+            </a>
+            <a href="https://x.com/chatduchaos" target="_blank">
+                <img src="https://raw.githubusercontent.com/chatduchaos/ChatDuChaos/main/images/Logo%20X.png" alt="Twitter">
+            </a>
         </div>
     </header>
     
     <main>
-        <h1>Bienvenue sur ChatDuChaos</h1>
-        <div class="twitch-embed">
-            <a href="#" class="twitch-logo">Twitch</a>
-            <iframe id="twitch-embed" src="https://player.twitch.tv/?channel=chatduchaos&parent=chatduchaos.com" allowfullscreen style="display:none;"></iframe>
+        <h1>Bienvenue sur ChatDuChaos!</h1>
+        <p>Contenu principal de la page d'accueil.</p>
+        <div class="twitch-embed" id="twitch-embed">
+            <iframe
+                src="https://player.twitch.tv/?channel=chatduchaos&parent=chatduchaos.com"
+                width="100%"
+                height="100%"
+                allowfullscreen
+                muted>
+            </iframe>
         </div>
     </main>
     
@@ -40,5 +55,18 @@
         <p><a href="mailto:chatduchaos@gmail.com">Contactez-moi par email</a></p>
         <p>&copy; 2024 ChatDuChaos. Tous droits réservés.</p>
     </footer>
+
+    <script>
+        const twitchLogo = document.querySelector('.twitch-logo');
+        const twitchEmbed = document.getElementById('twitch-embed');
+
+        twitchLogo.addEventListener('mouseover', () => {
+            twitchEmbed.style.display = 'block';
+        });
+
+        twitchLogo.addEventListener('mouseout', () => {
+            twitchEmbed.style.display = 'none';
+        });
+    </script>
 </body>
 </html>
