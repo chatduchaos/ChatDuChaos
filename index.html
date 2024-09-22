@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat du Chaos</title>
+    <title>ChatDuChaos</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -41,9 +41,28 @@
         <img src="https://raw.githubusercontent.com/chatduchaos/ChatDuChaos/main/images/ChatDuChaos%20photo%20de%20profil%20transparent.png" alt="Profile" class="profile-image">
     </main>
     
+    <div class="twitch-container">
+        <a href="#" class="twitch-logo" onclick="toggleTwitchEmbed(); return false;">
+            <img src="https://raw.githubusercontent.com/chatduchaos/ChatDuChaos/main/images/Twitch%20Logo.png" alt="Twitch">
+        </a>
+        <iframe id="twitch-embed" src="https://player.twitch.tv/?channel=chatduchaos&parent=chatduchaos.com" 
+            allow="autoplay; encrypted-media" style="display:none;"></iframe>
+    </div>
+
     <footer>
         <p><a href="mailto:chatduchaos@gmail.com">Contactez-moi par email</a></p>
-        <p>&copy; 2024 Chat du Chaos. Tous droits réservés.</p>
+        <p>&copy; 2024 ChatDuChaos. Tous droits réservés.</p>
     </footer>
+
+    <script>
+        function toggleTwitchEmbed() {
+            const embed = document.getElementById('twitch-embed');
+            if (embed.style.display === 'none') {
+                embed.style.display = 'block'; // Affiche l'embed
+            } else {
+                embed.style.display = 'none'; // Cache l'embed
+            }
+        }
+    </script>
 </body>
 </html>
