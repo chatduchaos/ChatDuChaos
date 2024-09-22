@@ -1,4 +1,4 @@
-const twitchLogo = document.querySelector('.social-icons a[href*="twitch"]');
+const twitchLogo = document.getElementById('twitch-logo');
 const twitchEmbed = document.getElementById('twitch-embed');
 
 twitchLogo.addEventListener('mouseenter', () => {
