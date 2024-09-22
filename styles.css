@@ -1,18 +1,20 @@
 body {
-    background-color: #f0f0f0; /* Gris clair pour le fond */
+    background-color: #f0f0f0;
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
 header {
-    background: linear-gradient(to bottom, #444, #222); /* Dégradé sombre */
+    background: linear-gradient(to bottom, #444, #222);
     padding: 10px 0;
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul {
     display: flex;
-    justify-content: center; /* Centrer les éléments */
     padding: 0;
     list-style: none;
 }
@@ -30,49 +32,41 @@ nav a {
 }
 
 nav a:hover {
-    border: 2px solid white; /* Encadré blanc au survol */
+    border: 2px solid white;
 }
 
 .social-icons {
-    position: absolute;
-    top: 10px;
-    right: 10px;
     display: flex;
+    align-items: center;
 }
 
 .social-icons a {
-    margin-left: 10px; /* Espacement entre les icônes */
+    margin-left: 10px;
 }
 
 .social-icons img {
-    width: 40px; /* Taille des icônes */
-    height: 40px; /* Taille des icônes */
-    transition: transform 0.2s; /* Animation de transition */
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s;
 }
 
 .social-icons img:hover {
-    transform: scale(1.5); /* Effet de grossissement */
+    transform: scale(1.5);
 }
 
 main {
     text-align: center;
 }
 
-main img {
-    width: 40%; /* Réduit la taille de l'image à 40% de la page */
-    height: auto; /* Garde les proportions de l'image */
-}
-
 .twitch-embed {
-    position: absolute; /* Positionner l'embed */
-    top: 60px; /* En dessous du header */
-    right: 0; /* Aligné à droite */
-    width: 10%; /* Largeur de l'embed */
-    display: none; /* Masqué par défaut */
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+    height: 60vh;
 }
 
 footer {
-    background: linear-gradient(to bottom, #444, #222); /* Dégradé sombre */
+    background: linear-gradient(to bottom, #444, #222);
     color: white;
     text-align: center;
     padding: 10px 0;
