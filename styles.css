@@ -1,70 +1,82 @@
 body {
-    background-color: #808080; /* Fond gris */
+    background-color: #f0f0f0; /* Gris clair pour le fond */
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    font-family: Arial, sans-serif;
 }
 
 header {
-    background: linear-gradient(#505050, #303030);
-    padding: 20px;
+    background: linear-gradient(to bottom, #444, #222); /* Dégradé sombre */
+    padding: 10px 0;
+    position: relative;
 }
 
 nav ul {
     display: flex;
-    justify-content: center; /* Centrer les boutons de navigation */
+    justify-content: center; /* Centrer les éléments */
     padding: 0;
+    list-style: none;
 }
 
-nav ul li {
-    list-style-type: none;
-    margin: 0 15px;
+nav li {
+    margin: 0 20px;
 }
 
-nav ul li a {
+nav a {
     text-decoration: none;
     color: white;
-    border: 2px solid white; /* Encadrement des boutons */
-    padding: 10px 15px; /* Taille des boutons */
-    transition: background 0.3s;
+    padding: 10px 15px;
+    border: 2px solid transparent;
+    border-radius: 5px;
 }
 
-nav ul li a:hover {
-    background: rgba(255, 255, 255, 0.2);
+nav a:hover {
+    border: 2px solid white; /* Encadré blanc au survol */
 }
 
 .social-icons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
     display: flex;
-    justify-content: flex-end; /* Alignement à droite */
-    padding: 10px 0;
 }
 
 .social-icons a {
-    margin-left: 15px; /* Espace entre les icônes */
+    margin-left: 10px; /* Espacement entre les icônes */
 }
 
 .social-icons img {
     width: 40px; /* Taille des icônes */
-    height: 40px;
-    transition: transform 0.3s; /* Effet de grossissement */
+    height: 40px; /* Taille des icônes */
+    transition: transform 0.2s; /* Animation de transition */
 }
 
 .social-icons img:hover {
-    transform: scale(1.5); /* Grossissement à 150% */
+    transform: scale(1.5); /* Effet de grossissement */
 }
 
 main {
-    flex: 1;
-    text-align: center; /* Centre le contenu */
+    text-align: center;
+}
+
+main img {
+    width: 40%; /* Réduit la taille de l'image à 40% de la page */
+    height: auto; /* Garde les proportions de l'image */
 }
 
 .twitch-embed {
+    position: absolute; /* Positionner l'embed */
+    top: 60px; /* En dessous du header */
+    right: 0; /* Aligné à droite */
+    width: 10%; /* Largeur de l'embed */
     display: none; /* Masqué par défaut */
 }
 
 footer {
-    background: linear-gradient(#505050, #303030);
+    background: linear-gradient(to bottom, #444, #222); /* Dégradé sombre */
+    color: white;
     text-align: center;
-    padding: 10px;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }

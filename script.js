@@ -1,10 +1,10 @@
-const twitchLogo = document.querySelector('.social-icons a[href*="twitch"]');
-const twitchEmbed = document.getElementById('twitch-embed');
+const twitchIcon = document.querySelector('.social-icons a[href="https://www.twitch.tv/chatduchaos"]');
+const twitchEmbed = document.querySelector('.twitch-embed');
 
-twitchLogo.addEventListener('mouseover', () => {
+twitchIcon.addEventListener('mouseenter', () => {
     twitchEmbed.style.display = 'block'; // Affiche l'embed
 });
 
-twitchLogo.addEventListener('mouseleave', () => {
+twitchIcon.addEventListener('mouseleave', () => {
     twitchEmbed.style.display = 'none'; // Masque l'embed
 });
