@@ -1,13 +1,14 @@
-document.getElementById('twitch-logo').addEventListener('mouseenter', function() {
-    document.getElementById('twitch-embed').style.display = 'block';
+const twitchLogo = document.getElementById('twitch-logo');
+const twitchEmbed = document.getElementById('twitch-embed');
+
+twitchLogo.addEventListener('mouseenter', () => {
+    twitchEmbed.style.display = 'block';
 });
 
-document.getElementById('twitch-logo').addEventListener('mouseleave', function() {
-    // Ne rien faire ici pour garder l'embed affiché quand la souris n'est pas dessus
+twitchLogo.addEventListener('mouseleave', () => {
+    twitchEmbed.style.display = 'none';
 });
 
-document.getElementById('twitch-logo').addEventListener('click', function(event) {
-    event.preventDefault(); // Empêche le lien de s'ouvrir immédiatement
-    const embed = document.getElementById('twitch-embed');
-    embed.style.display = (embed.style.display === 'block') ? 'none' : 'block'; // Toggle l'embed
+twitchLogo.addEventListener('click', () => {
+    twitchEmbed.style.display = 'block';
 });
