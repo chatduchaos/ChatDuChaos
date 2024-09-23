@@ -118,32 +118,21 @@ footer a:hover {
 }
 
 .planning-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: stretch;
-    height: calc(100% - 80px);
-    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    height: calc(100vh - 120px);
 }
 
 .day {
-    flex: 1;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
     display: flex;
-    justify-content: center;
     align-items: center;
-    border-right: 2px solid #444;
-    padding: 20px;
+    justify-content: center;
     font-size: 24px;
+    height: 100%;
 }
 
 .day:last-child {
     border-right: none;
-}
-
-.day:nth-child(odd) {
-    background-color: #444;
-}
-
-.day:nth-child(even) {
-    background-color: #555;
 }
