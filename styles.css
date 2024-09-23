@@ -117,22 +117,21 @@ footer a:hover {
     height: 100%;
 }
 
-.planning-container {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    height: calc(100vh - 120px);
-}
-
-.day {
-    border-right: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
+.planning {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    height: 100%;
+    justify-content: space-between;
+    height: calc(100% - 80px);
 }
 
-.day:last-child {
+.planning div {
+    flex: 1;
+    border-right: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.planning div:last-child {
     border-right: none;
 }
