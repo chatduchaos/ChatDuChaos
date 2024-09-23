@@ -117,21 +117,25 @@ footer a:hover {
     height: 100%;
 }
 
-.planning {
+#planning {
     display: flex;
     justify-content: space-between;
-    height: calc(100% - 80px);
-}
-
-.planning div {
-    flex: 1;
-    border-right: 1px solid white;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    font-size: 24px;
+    height: calc(100% - 100px); /* Adjust for header and footer */
+    margin-top: 80px;
 }
 
-.planning div:last-child {
+.day {
+    flex: 1;
+    border-right: 2px solid white;
+    text-align: center;
+    padding: 20px;
+}
+
+.day:last-child {
     border-right: none;
+}
+
+h1 {
+    margin: 20px;
 }
