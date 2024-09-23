@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giveaway - ChatDuChaos</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .hidden-embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 10; /* Assure que l'embed Twitch soit au-dessus du Gleam */
+            display: none; /* Cacher par défaut */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -44,7 +55,6 @@
     </header>
     
     <main>
-        <iframe src="https://gleam.io/yNAVP/star-citizen-giveaway-constellation-taurus" width="100%" height="100%" frameborder="0"></iframe>
         <div class="hidden-embed" id="twitchEmbed">
             <iframe 
                 src="https://player.twitch.tv/?channel=chatduchaos&parent=chatduchaos.com" 
@@ -53,6 +63,7 @@
                 allowfullscreen>
             </iframe>
         </div>
+        <iframe src="https://gleam.io/yNAVP/star-citizen-giveaway-constellation-taurus" width="100%" height="100%" frameborder="0"></iframe>
     </main>
     
     <footer>
