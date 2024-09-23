@@ -117,22 +117,33 @@ footer a:hover {
     height: 100%;
 }
 
-.week-container {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    height: calc(100vh - 160px);
-    align-items: center;
-    justify-items: center;
-    background-color: #444;
-    color: white;
+.planning-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    height: calc(100% - 80px);
+    margin-top: 80px;
 }
 
 .day {
-    background: linear-gradient(to right, #6a11cb, #2575fc);
-    border-radius: 10px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid #444;
     padding: 20px;
-    text-align: center;
     font-size: 24px;
-    width: 90%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.day:last-child {
+    border-right: none;
+}
+
+.day:nth-child(odd) {
+    background-color: #444;
+}
+
+.day:nth-child(even) {
+    background-color: #555;
 }
