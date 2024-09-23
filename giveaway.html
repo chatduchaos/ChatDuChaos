@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giveaway - ChatDuChaos</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .full-page {
+            overflow: auto; /* Permet de faire défiler le contenu */
+        }
+        .gleam-widget {
+            width: 100%;
+            border: none; /* Enlève les bordures */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -52,7 +61,7 @@
         </div>
         
         <div class="full-page">
-            <iframe class="gleam-widget" src="https://gleam.io/yNAVP/star-citizen-giveaway-constellation-taurus" scrolling="no"></iframe>
+            <iframe class="gleam-widget" id="gleam-iframe" src="https://gleam.io/yNAVP/star-citizen-giveaway-constellation-taurus" scrolling="no"></iframe>
         </div>
     </main>
     
@@ -60,6 +69,15 @@
         <p><a href="mailto:chatduchaos@gmail.com">Contactez-moi par email</a></p>
         <p>&copy; 2024 ChatDuChaos. Tous droits réservés.</p>
     </footer>
+    
+    <script>
+        const gleamIframe = document.getElementById('gleam-iframe');
+        
+        gleamIframe.onload = function() {
+            // Ajuste la hauteur de l'iframe en fonction de son contenu
+            gleamIframe.style.height = gleamIframe.contentWindow.document.body.scrollHeight + 'px';
+        };
+    </script>
     
     <script src="script.js"></script>
 </body>
