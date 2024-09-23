@@ -47,8 +47,8 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 10; /* Assure que l'embed Twitch soit au-dessus des autres contenus */
-    display: none; /* Cacher par défaut */
+    z-index: 10;
+    display: none;
 }
 
 footer {
@@ -60,7 +60,6 @@ footer {
     clear: both;
 }
 
-/* Styles spécifiques à la page planning */
 .planning {
     display: flex;
     justify-content: space-between;
@@ -68,15 +67,14 @@ footer {
 
 .planning div {
     flex: 1;
-    border-left: 2px solid #000; /* Barres verticales entre les jours */
+    border-left: 2px solid #000;
     padding: 20px;
 }
 
 .planning div:first-child {
-    border-left: none; /* Pas de bordure pour le premier élément */
+    border-left: none;
 }
 
-/* Styles pour les vidéos et shorts sur youtube.html */
 .youtube-videos {
     display: flex;
     justify-content: space-between;
@@ -90,10 +88,9 @@ footer {
 .short-videos {
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Espace entre les shorts */
+    gap: 10px;
 }
 
-/* Styles globaux pour tous les iframes */
 iframe {
     border: none;
     width: 100%;
