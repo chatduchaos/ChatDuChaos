@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChatDuChaos - Accueil</title>
+    <title>ChatDuChaos</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -43,10 +43,18 @@
         </div>
     </header>
     
-    <div class="amazon-tooltip" style="display: none;">Lien Amazon partenaire rémunéré</div>
-    
+    <div class="amazon-tooltip" id="amazon-tooltip" style="display: none;">
+        Lien Amazon partenaire rémunéré
+    </div>
+
     <main>
         <img src="https://github.com/chatduchaos/ChatDuChaos/blob/main/images/ChatDuChaos%20photo%20de%20profil%20transparent.png?raw=true" alt="ChatDuChaos" class="profile-image">
+        <iframe
+            src="https://player.twitch.tv/?channel=chatduchaos&parent=chatduchaos.com"
+            height="100%"
+            width="100%"
+            allowfullscreen>
+        </iframe>
     </main>
     
     <footer>
@@ -56,14 +64,14 @@
     
     <script src="script.js"></script>
     <script>
-        const amazonIcon = document.querySelector('.social-icons a[href="https://amzn.to/3MbaKcu"]');
-        const tooltip = document.querySelector('.amazon-tooltip');
+        const amazonLogo = document.querySelector('.social-icons img[src="https://github.com/chatduchaos/ChatDuChaos/blob/main/images/Logo%20Amazon.png?raw=true"]');
+        const tooltip = document.getElementById('amazon-tooltip');
 
-        amazonIcon.addEventListener('mouseenter', () => {
+        amazonLogo.addEventListener('mouseenter', () => {
             tooltip.style.display = 'block';
         });
 
-        amazonIcon.addEventListener('mouseleave', () => {
+        amazonLogo.addEventListener('mouseleave', () => {
             tooltip.style.display = 'none';
         });
     </script>
