@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChatDuChaos</title>
+    <title>ChatDuChaos - Accueil</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -19,34 +19,53 @@
             </ul>
         </nav>
         <div class="social-icons">
-            <a href="https://www.twitch.tv/chatduchaos" target="_blank"><img src="https://raw.githubusercontent.com/chatduchaos/ChatDuChaos/main/images/Twitch%20Logo.png" alt="Twitch"></a>
-            <a href="https://www.discord.com/invite/lataverneduchat" target="_blank"><img src="https://github.com/chatduchaos/ChatDuChaos/blob/main/images/Logo%20Discord.png?raw=true" alt="Discord"></a>
-            <a href="https://www.youtube.com/@ChatDuChaos" target="_blank"><img src="https://raw.githubusercontent.com/chatduchaos/ChatDuChaos/main/images/Logo%20YouTube.png" alt="YouTube"></a>
-            <a href="https://www.tiktok.com/@chatduchaos" target="_blank"><img src="https://raw.githubusercontent.com/chatduchaos/ChatDuChaos/main/images/Logo%20TikTok.png" alt="TikTok"></a>
-            <a href="https://x.com/chatduchaos" target="_blank"><img src="https://raw.githubusercontent.com/chatduchaos/ChatDuChaos/main/images/Logo%20X.png" alt="Twitter"></a>
-            <a href="https://amzn.to/3MbaKcu" target="_blank"><img src="https://github.com/chatduchaos/ChatDuChaos/blob/main/images/Logo%20Amazon.png?raw=true" alt="Amazon"></a>
-            <a href="https://www.instagram.com/chatduchaos/" target="_blank"><img src="https://raw.githubusercontent.com/chatduchaos/ChatDuChaos/main/images/Logo%20Instagram.png" alt="Instagram"></a>
+            <a href="https://www.twitch.tv/chatduchaos" target="_blank">
+                <img src="https://raw.githubusercontent.com/chatduchaos/ChatDuChaos/main/images/Twitch%20Logo.png" alt="Twitch">
+            </a>
+            <a href="https://discord.com/invite/lataverneduchat" target="_blank">
+                <img src="https://github.com/chatduchaos/ChatDuChaos/blob/main/images/Logo%20Discord.png?raw=true" alt="Discord">
+            </a>
+            <a href="https://www.youtube.com/@ChatDuChaos" target="_blank">
+                <img src="https://raw.githubusercontent.com/chatduchaos/ChatDuChaos/main/images/Logo%20YouTube.png" alt="YouTube">
+            </a>
+            <a href="https://www.tiktok.com/@chatduchaos" target="_blank">
+                <img src="https://raw.githubusercontent.com/chatduchaos/ChatDuChaos/main/images/Logo%20TikTok.png" alt="TikTok">
+            </a>
+            <a href="https://x.com/chatduchaos" target="_blank">
+                <img src="https://raw.githubusercontent.com/chatduchaos/ChatDuChaos/main/images/Logo%20X.png" alt="Twitter">
+            </a>
+            <a href="https://amzn.to/3MbaKcu" target="_blank">
+                <img src="https://github.com/chatduchaos/ChatDuChaos/blob/main/images/Logo%20Amazon.png?raw=true" alt="Amazon">
+            </a>
+            <a href="https://www.instagram.com/chatduchaos/" target="_blank">
+                <img src="https://raw.githubusercontent.com/chatduchaos/ChatDuChaos/main/images/Logo%20Instagram.png" alt="Instagram">
+            </a>
         </div>
     </header>
-
+    
+    <div class="amazon-tooltip" style="display: none;">Lien Amazon partenaire rémunéré</div>
+    
     <main>
-        <img src="https://github.com/chatduchaos/ChatDuChaos/blob/main/images/ChatDuChaos%20photo%20de%20profil%20transparent.png?raw=true" alt="ChatDuChaos" style="display: block; margin: 0 auto;">
+        <img src="https://github.com/chatduchaos/ChatDuChaos/blob/main/images/ChatDuChaos%20photo%20de%20profil%20transparent.png?raw=true" alt="ChatDuChaos" class="profile-image">
     </main>
-
+    
     <footer>
         <p><a href="mailto:chatduchaos@gmail.com">Contactez-moi par email</a></p>
         <p>&copy; 2024 ChatDuChaos. Tous droits réservés.</p>
     </footer>
-
-    <div class="hidden-embed" id="twitch-embed">
-        <iframe
-            src="https://player.twitch.tv/?channel=chatduchaos&parent=chatduchaos.com"
-            height="100%"
-            width="100%"
-            allowfullscreen>
-        </iframe>
-    </div>
-
+    
     <script src="script.js"></script>
+    <script>
+        const amazonIcon = document.querySelector('.social-icons a[href="https://amzn.to/3MbaKcu"]');
+        const tooltip = document.querySelector('.amazon-tooltip');
+
+        amazonIcon.addEventListener('mouseenter', () => {
+            tooltip.style.display = 'block';
+        });
+
+        amazonIcon.addEventListener('mouseleave', () => {
+            tooltip.style.display = 'none';
+        });
+    </script>
 </body>
 </html>
