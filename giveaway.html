@@ -6,9 +6,24 @@
     <title>Giveaway - ChatDuChaos</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        .full-page {
-            overflow: auto; /* Permet de faire défiler le contenu */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
+
+        main {
+            flex-grow: 1;
+            overflow-y: auto; /* Permet le défilement dans le main */
+        }
+
+        .full-page {
+            height: 100%; /* Prend toute la hauteur disponible */
+            overflow-y: auto; /* Permet le défilement si nécessaire */
+        }
+
         .gleam-widget {
             width: 100%;
             border: none; /* Enlève les bordures */
@@ -72,10 +87,20 @@
     
     <script>
         const gleamIframe = document.getElementById('gleam-iframe');
-        
+
+        function adjustIframeHeight() {
+            if (gleamIframe.contentWindow) {
+                const newHeight = gleamIframe.contentWindow.document.body.scrollHeight;
+                gleamIframe.style.height = newHeight + 'px';
+            }
+        }
+
+        // Ajuster la hauteur à l'initialisation et périodiquement en cas de changement dynamique
         gleamIframe.onload = function() {
-            // Ajuste la hauteur de l'iframe en fonction de son contenu
-            gleamIframe.style.height = gleamIframe.contentWindow.document.body.scrollHeight + 'px';
+            adjustIframeHeight();
+
+            // Vérifie toutes les 2 secondes si la hauteur a changé
+            setInterval(adjustIframeHeight, 2000);
         };
     </script>
     
