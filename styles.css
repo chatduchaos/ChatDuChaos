@@ -76,7 +76,7 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 80px; /* Pour éviter que ça ne se chevauche avec le header */
+    margin-top: 80px;
 }
 
 .profile-image {
@@ -121,7 +121,7 @@ footer a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: calc(100% - 100px); /* Ajuster pour le header et le footer */
+    height: calc(100% - 100px); /* Adjust for header and footer */
     margin-top: 80px;
 }
 
@@ -146,48 +146,11 @@ h1 {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 500; /* Ajuster si nécessaire */
+    z-index: 500; /* Adjust as needed */
 }
 
 .gleam-widget {
     width: 100%;
-    height: 100vh; /* Hauteur complète */
-    border: none; /* Pas de bordure */
-}
-
-.weekly-planner {
-    display: flex;
-    justify-content: space-between; /* Espace égal entre les colonnes */
-    padding: 20px;
-    margin-top: 80px; /* Pour éviter que ça ne se chevauche avec le header */
-}
-
-.day-section {
-    flex: 1; /* Prend l'espace restant */
-    min-width: 100px; /* Largeur minimum pour chaque jour */
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 0 10px; /* Ajoute des marges latérales */
-}
-
-.day-title {
-    font-size: 2em;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.hours {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.hour {
-    padding: 5px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.9);
-    text-align: center;
+    height: 100vh; /* Full height */
+    border: none; /* No border */
 }
