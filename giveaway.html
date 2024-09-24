@@ -6,16 +6,11 @@
     <title>Giveaway - ChatDuChaos</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Reset de base */
         body, html {
             margin: 0;
             padding: 0;
             height: 100%;
             font-family: Arial, sans-serif;
-        }
-
-        /* Structure en Flexbox pour maintenir le footer en bas */
-        body {
             display: flex;
             flex-direction: column;
             min-height: 100vh;
@@ -26,24 +21,9 @@
             overflow-y: auto;
         }
 
-        .full-page {
-            width: 100%;
-            max-width: 100%;
-        }
-
-        .gleam-widget {
+        .full-page, .gleam-widget {
             width: 100%;
             border: none;
-        }
-
-        footer {
-            position: sticky;
-            bottom: 0;
-            width: 100%;
-            background-color: #f1f1f1;
-            text-align: center;
-            padding: 10px;
-            box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
         }
     </style>
 </head>
@@ -86,10 +66,7 @@
     
     <main>
         <div class="hidden-embed">
-            <iframe
-                src="https://player.twitch.tv/?channel=chatduchaos&parent=chatduchaos.com&muted=true"
-                allowfullscreen>
-            </iframe>
+            <iframe src="https://player.twitch.tv/?channel=chatduchaos&parent=chatduchaos.com&muted=true" allowfullscreen></iframe>
         </div>
         
         <div class="full-page">
@@ -97,18 +74,12 @@
         </div>
     </main>
     
-    <footer>
-        <p><a href="mailto:chatduchaos@gmail.com">Contactez-moi par email</a></p>
-        <p>&copy; 2024 ChatDuChaos. Tous droits réservés.</p>
-    </footer>
-    
     <script>
         const gleamIframe = document.getElementById('gleam-iframe');
 
         function adjustIframeHeight() {
             if (gleamIframe.contentWindow) {
-                const newHeight = gleamIframe.contentWindow.document.body.scrollHeight;
-                gleamIframe.style.height = newHeight + 'px';
+                gleamIframe.style.height = gleamIframe.contentWindow.document.body.scrollHeight + 'px';
             }
         }
 
