@@ -154,3 +154,41 @@ h1 {
     height: 100vh; /* Full height */
     border: none; /* No border */
 }
+                                                         =======================
+.weekly-planner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.day-section {
+    flex: 1;
+    min-width: 200px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.day-title {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.hours {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hour {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+}
