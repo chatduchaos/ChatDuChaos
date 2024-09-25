@@ -169,3 +169,30 @@ h1 {
     text-decoration: underline;
     color: #ff6600;
 }
+
+/* CSS for Planning */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Supprime l'espace entre les cellules */
+}
+
+th, td {
+    padding: 15px; /* Espace à l'intérieur des cellules */
+    text-align: center; /* Centrer le texte */
+    border: 2px solid #00aaff; /* Bordure autour des cellules */
+}
+
+th {
+    background-color: #444; /* Couleur de fond pour les en-têtes */
+    color: white; /* Couleur du texte des en-têtes */
+}
+
+td {
+    background-color: #333; /* Couleur de fond pour les cellules */
+    color: white; /* Couleur du texte */
+    transition: background-color 0.3s; /* Animation de changement de couleur */
+}
+
+td:hover {
+    background-color: #555; /* Changement de couleur au survol */
+}
