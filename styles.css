@@ -79,8 +79,31 @@ main {
     margin-top: 80px;
 }
 
-.twitch-embed {
-    width: 100%;
+.button-container {
+    display: flex;
+    justify-content: center; /* Centre les boutons horizontalement */
+    align-items: center;
+    flex-direction: row; /* Aligne les boutons horizontalement */
+    flex: 1; /* Remplit l'espace disponible */
+    gap: 40px; /* Augmente l'espace entre les boutons */
+    height: 40%; /* Occupent au moins 40% de la page */
+    margin: 0 0 20px 0; /* Ajout d'une marge en bas pour le footer */
+}
+
+.nav-button {
+    padding: 40px 70px; /* Espacement pour rendre les boutons plus grands */
+    font-size: 32px; /* Augmentation de la taille de la police */
+    background-color: transparent; /* Fond transparent */
+    color: rgba(0, 170, 255, 0.8); /* Couleur du texte avec opacité */
+    border: 3px solid rgba(0, 170, 255, 0.8); /* Bordure avec opacité */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Animation pour les transitions */
+}
+
+.nav-button:hover {
+    background-color: rgba(0, 170, 255, 0.8); /* Couleur de fond au survol avec opacité */
+    color: white; /* Couleur du texte au survol */
 }
 
 .profile-image {
@@ -124,7 +147,7 @@ footer a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: calc(100% - 100px); /* Adjust for header and footer */
+    height: calc(100% - 100px); /* Ajust pour l'en-tête et le pied de page */
     margin-top: 80px;
 }
 
@@ -149,13 +172,13 @@ h1 {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 500; /* Adjust as needed */
+    z-index: 500; /* Ajuster selon les besoins */
 }
 
 .gleam-widget {
     width: 100%;
-    height: 100vh; /* Full height */
-    border: none; /* No border */
+    height: 100vh; /* Pleine hauteur */
+    border: none; /* Pas de bordure */
 }
 
 /* New CSS for external link */
@@ -361,37 +384,21 @@ td:hover {
 .close-embed {
     position: absolute;
     top: 10px;
-    right: 10px; /* Place le bouton de fermeture à droite */
-    background-color: #6441a5;
-    color: white;
+    right: 10px;
+    background: none;
     border: none;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    font-size: 16px;
+    color: white;
+    font-size: 20px;
     cursor: pointer;
-    display: none;
-}
-
-.modal.minimized .close-embed {
-    display: block;
 }
 
 .restore {
     position: absolute;
     top: 10px;
-    right: 50px;
-    background-color: #6441a5;
-    color: white;
+    left: 10px;
+    background: none;
     border: none;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    font-size: 16px;
+    color: white;
+    font-size: 20px;
     cursor: pointer;
-    display: none;
-}
-
-.modal.minimized .restore {
-    display: block;
 }
