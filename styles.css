@@ -81,29 +81,29 @@ main {
 
 .button-container {
     display: flex;
-    justify-content: center; /* Centre les boutons horizontalement */
+    justify-content: center;
     align-items: center;
-    flex-direction: row; /* Aligne les boutons horizontalement */
-    flex: 1; /* Remplit l'espace disponible */
-    gap: 40px; /* Augmente l'espace entre les boutons */
-    height: 40%; /* Occupent au moins 40% de la page */
-    margin: 0 0 20px 0; /* Ajout d'une marge en bas pour le footer */
+    flex-direction: row;
+    flex: 1;
+    gap: 40px;
+    height: 40%;
+    margin: 0 0 20px 0;
 }
 
 .nav-button {
-    padding: 40px 70px; /* Espacement pour rendre les boutons plus grands */
-    font-size: 32px; /* Augmentation de la taille de la police */
-    background-color: transparent; /* Fond transparent */
-    color: rgba(0, 170, 255, 0.8); /* Couleur du texte avec opacité */
-    border: 3px solid rgba(0, 170, 255, 0.8); /* Bordure avec opacité */
-    border-radius: 5px; /* Coins arrondis */
+    padding: 40px 70px;
+    font-size: 32px;
+    background-color: transparent;
+    color: rgba(0, 170, 255, 0.8);
+    border: 3px solid rgba(0, 170, 255, 0.8);
+    border-radius: 5px;
     cursor: pointer;
-    transition: all 0.3s ease; /* Animation pour les transitions */
+    transition: all 0.3s ease;
 }
 
 .nav-button:hover {
-    background-color: rgba(0, 170, 255, 0.8); /* Couleur de fond au survol avec opacité */
-    color: white; /* Couleur du texte au survol */
+    background-color: rgba(0, 170, 255, 0.8);
+    color: white;
 }
 
 .profile-image {
@@ -147,7 +147,7 @@ footer a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: calc(100% - 100px); /* Ajust pour l'en-tête et le pied de page */
+    height: calc(100% - 100px);
     margin-top: 80px;
 }
 
@@ -172,23 +172,22 @@ h1 {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 500; /* Ajuster selon les besoins */
+    z-index: 500;
 }
 
 .gleam-widget {
     width: 100%;
-    height: 100vh; /* Pleine hauteur */
-    border: none; /* Pas de bordure */
+    height: 100vh;
+    border: none;
 }
 
-/* New CSS for external link */
 .external-link {
     margin-top: 20px;
     color: #00aaff;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: bold;
-    text-align: center; /* Assures the text is centered */
+    text-align: center;
 }
 
 .external-link:hover {
@@ -196,34 +195,32 @@ h1 {
     color: #ff6600;
 }
 
-/* CSS for Planning */
 table {
     width: 100%;
-    border-collapse: collapse; /* Supprime l'espace entre les cellules */
+    border-collapse: collapse;
 }
 
 th, td {
-    padding: 15px; /* Espace à l'intérieur des cellules */
-    text-align: center; /* Centrer le texte */
-    border: 2px solid #00aaff; /* Bordure autour des cellules */
+    padding: 15px;
+    text-align: center;
+    border: 2px solid #00aaff;
 }
 
 th {
-    background-color: #444; /* Couleur de fond pour les en-têtes */
-    color: white; /* Couleur du texte des en-têtes */
+    background-color: #444;
+    color: white;
 }
 
 td {
-    background-color: #333; /* Couleur de fond pour les cellules */
-    color: white; /* Couleur du texte */
-    transition: background-color 0.3s; /* Animation de changement de couleur */
+    background-color: #333;
+    color: white;
+    transition: background-color 0.3s;
 }
 
 td:hover {
-    background-color: #555; /* Changement de couleur au survol */
+    background-color: #555;
 }
 
-/* Styles pour le bouton et le modal */
 .twitch-button {
     position: fixed;
     bottom: 20px;
@@ -240,7 +237,7 @@ td:hover {
 }
 
 .modal {
-    display: none; /* Masquer par défaut */
+    display: none;
     position: fixed;
     z-index: 1001;
     left: 0;
@@ -281,7 +278,7 @@ td:hover {
 
 .modal-header div {
     display: flex;
-    gap: 10px; /* Espacement entre les boutons */
+    gap: 10px;
 }
 
 .close,
@@ -343,12 +340,10 @@ td:hover {
     width: 100%;
 }
 
-/* Styles pour masquer et afficher le chat */
 .chat-hidden {
     display: none !important;
 }
 
-/* Styles pour la mise en page */
 .container {
     display: flex;
     flex-direction: column;
@@ -365,7 +360,7 @@ td:hover {
     flex: 1;
     display: flex;
     flex-direction: column;
-    width: 300px; /* Ajustez la largeur selon vos besoins */
+    width: 300px;
 }
 
 .modal-body {
